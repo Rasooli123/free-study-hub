@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Rational Numbers | Free Study Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="top-header">
+
+    <div class="brand">
+
+        <div class="brand-icon">📖</div>
+
+        <div>
+            <h1>FREE <span>STUDY</span> HUB</h1>
+            <p>TR-YÖS Preparation</p>
+        </div>
+
+    </div>
+
+    <nav>
+        <a href="index.html">⌂ &nbsp; Home</a>
+        <a href="math1.html">Math 1</a>
+        <a href="math2.html">Math 2</a>
+    </nav>
+
+</header>
+
+
+<main class="chapter-page">
+
+    <section class="chapter-hero">
+
+        <span>MATHEMATICS 1</span>
+
+        <h1>Chapter 2: Rational Numbers</h1>
+
+        <p>Practice questions based on the chapter.</p>
+
+    </section>
+
+
+    <section class="questions">
+
+
+        <!-- QUESTION 1 -->
+
+        <div class="question-card">
+
+            <h2>Question 1</h2>
+
+            <p class="question">
+                Which of the following is a rational number?
+            </p>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q1')">
+                    A) 3/5
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q1')">
+                    B) √2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q1')">
+                    C) π
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q1')">
+                    D) √7
+                </button>
+
+            </div>
+
+            <div class="answer" id="q1">
+
+                <strong class="result"></strong>
+
+                <p>
+                    3/5 is the ratio of two integers, so it is a rational number.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 2 -->
+
+        <div class="question-card">
+
+            <h2>Question 2</h2>
+
+            <p class="question">
+                Which fraction is equivalent to 2/3?
+            </p>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q2')">
+                    A) 4/5
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q2')">
+                    B) 8/12
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q2')">
+                    C) 6/8
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q2')">
+                    D) 10/12
+                </button>
+
+            </div>
+
+            <div class="answer" id="q2">
+
+                <strong class="result"></strong>
+
+                <p>
+                    Multiplying both the numerator and denominator of 2/3 by 4 gives 8/12.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 3 -->
+
+        <div class="question-card">
+
+            <h2>Question 3</h2>
+
+            <p class="question">
+                What is the simplest form of 18/24?
+            </p>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q3')">
+                    A) 2/3
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q3')">
+                    B) 3/4
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q3')">
+                    C) 4/5
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q3')">
+                    D) 5/6
+                </button>
+
+            </div>
+
+            <div class="answer" id="q3">
+
+                <strong class="result"></strong>
+
+                <p>
+                    Dividing both 18 and 24 by their greatest common divisor, 6, gives 3/4.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 4 -->
+
+        <div class="question-card">
+
+            <h2>Question 4</h2>
+
+            <p class="question">
+                Which fraction is greater?
+            </p>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q4')">
+                    A) 3/8
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q4')">
+                    B) 5/8
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q4')">
+                    C) 1/4
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q4')">
+                    D) 2/8
+                </button>
+
+            </div>
+
+            <div class="answer" id="q4">
+
+                <strong class="result"></strong>
+
+                <p>
+                    Since all fractions have denominator 8, the largest numerator gives the largest fraction. Therefore, 5/8 is greatest.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 5 -->
+
+        <div class="question-card">
+
+            <h2>Question 5</h2>
+
+            <p class="question">
+                What is 1/2 + 1/3?
+            </p>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q5')">
+                    A) 2/5
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q5')">
+                    B) 5/6
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q5')">
+                    C) 1/5
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q5')">
+                    D) 2/6
+                </button>
+
+            </div>
+
+            <div class="answer" id="q5">
+
+                <strong class="result"></strong>
+
+                <p>
+                    The common denominator is 6: 1/2 = 3/6 and 1/3 = 2/6. Therefore, 3/6 + 2/6 = 5/6.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 6 -->
+
+        <div class="question-card">
+
+            <h2>Question 6</h2>
+
+            <p class="question">
+                What is 3/4 − 1/4?
+            </p>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q6')">
+                    A) 1/4
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q6')">
+                    B) 1/2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q6')">
+                    C) 2/3
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q6')">
+                    D) 3/8
+                </button>
+
+            </div>
+
+            <div class="answer" id="q6">
+
+                <strong class="result"></strong>
+
+                <p>
+                    The denominators are already equal, so subtract the numerators: 3/4 − 1/4 = 2/4 = 1/2.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 7 -->
+
+        <div class="question-card">
+
+            <h2>Question 7</h2>
+
+            <p class="question">
+                What is 2/3 × 9/4?
+            </p>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q7')">
+                    A) 2
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q7')">
+                    B) 3/2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q7')">
+                    C) 3
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q7')">
+                    D) 9/2
+                </button>
+
+            </div>
+
+            <div class="answer" id="q7">
+
+                <strong class="result"></strong>
+
+                <p>
+                    Multiply the numerators and denominators: (2 × 9)/(3 × 4) = 18/12 = 3/2.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 8 -->
+
+        <div class="question-card">
+
+            <h2>Question 8</h2>
+
+            <p class="question">
+                What is 3/5 ÷ 6/5?
+            </p>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q8')">
+                    A) 1/2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q8')">
+                    B) 2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q8')">
+                    C) 3/2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q8')">
+                    D) 5/6
+                </button>
+
+            </div>
+
+            <div class="answer" id="q8">
+
+                <strong class="result"></strong>
+
+                <p>
+                    Divide by multiplying by the reciprocal: 3/5 × 5/6 = 3/6 = 1/2.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 9 -->
+
+        <div class="question-card">
+
+            <h2>Question 9</h2>
+
+            <p class="question">
+                Which decimal is equal to 3/4?
+            </p>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q9')">
+                    A) 0.25
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q9')">
+                    B) 0.75
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q9')">
+                    C) 0.34
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q9')">
+                    D) 1.25
+                </button>
+
+            </div>
+
+            <div class="answer" id="q9">
+
+                <strong class="result"></strong>
+
+                <p>
+                    3 ÷ 4 = 0.75, so 3/4 = 0.75.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 10 -->
+
+        <div class="question-card">
+
+            <h2>Question 10</h2>
+
+            <p class="question">
+                Which fraction represents 0.2?
+            </p>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q10')">
+                    A) 1/2
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q10')">
+                    B) 1/5
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q10')">
+                    C) 2/5
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q10')">
+                    D) 1/4
+                </button>
+
+            </div>
+
+            <div class="answer" id="q10">
+
+                <strong class="result"></strong>
+
+                <p>
+                    0.2 = 2/10 = 1/5.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 11 -->
+
+        <div class="question-card">
+
+            <h2>Question 11</h2>
+
+            <p class="question">
+                What is 2 1/3 written as an improper fraction?
+            </p>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q11')">
+                    A) 5/3
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q11')">
+                    B) 7/3
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q11')">
+                    C) 6/3
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q11')">
+                    D) 8/3
+                </button>
+
+            </div>
+
+            <div class="answer" id="q11">
+
+                <strong class="result"></strong>
+
+                <p>
+                    2 × 3 + 1 = 7, so 2 1/3 = 7/3.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 12 -->
+
+        <div class="question-card">
+
+            <h2>Question 12</h2>
+
+            <p class="question">
+                Which fraction is the smallest?
+            </p>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q12')">
+                    A) 1/2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q12')">
+                    B) 2/3
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q12')">
+                    C) 1/4
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q12')">
+                    D) 3/4
+                </button>
+
+            </div>
+
+            <div class="answer" id="q12">
+
+                <strong class="result"></strong>
+
+                <p>
+                    1/4 = 0.25, which is smaller than 1/2, 2/3, and 3/4.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 13 -->
+
+        <div class="question-card">
+
+            <h2>Question 13</h2>
+
+            <p class="question">
+                What is the reciprocal of 5/7?
+            </p>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q13')">
+                    A) 5/7
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q13')">
+                    B) 7/5
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q13')">
+                    C) -7/5
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q13')">
+                    D) 2/5
+                </button>
+
+            </div>
+
+            <div class="answer" id="q13">
+
+                <strong class="result"></strong>
+
+                <p>
+                    The reciprocal is found by switching the numerator and denominator. Therefore, the reciprocal of 5/7 is 7/5.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 14 -->
+
+        <div class="question-card">
+
+            <h2>Question 14</h2>
+
+            <p class="question">
+                What is (-2/3) + (1/3)?
+            </p>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q14')">
+                    A) -1/3
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q14')">
+                    B) 1/3
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q14')">
+                    C) -2/3
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q14')">
+                    D) 1
+                </button>
+
+            </div>
+
+            <div class="answer" id="q14">
+
+                <strong class="result"></strong>
+
+                <p>
+                    The denominators are equal: -2/3 + 1/3 = -1/3.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 15 -->
+
+        <div class="question-card">
+
+            <h2>Question 15</h2>
+
+            <p class="question">
+                What is (-3/4) × (8/9)?
+            </p>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q15')">
+                    A) 2/3
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q15')">
+                    B) -2/3
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q15')">
+                    C) -3/2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q15')">
+                    D) 1/3
+                </button>
+
+            </div>
+
+            <div class="answer" id="q15">
+
+                <strong class="result"></strong>
+
+                <p>
+                    (-3 × 8)/(4 × 9) = -24/36 = -2/3.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 16 -->
+
+        <div class="question-card">
+
+            <h2>Question 16</h2>
+
+            <p class="question">
+                What is 5/6 − 1/3?
+            </p>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q16')">
+                    A) 1/6
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q16')">
+                    B) 1/2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q16')">
+                    C) 2/3
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q16')">
+                    D) 5/9
+                </button>
+
+            </div>
+
+            <div class="answer" id="q16">
+
+                <strong class="result"></strong>
+
+                <p>
+                    1/3 = 2/6, so 5/6 − 2/6 = 3/6 = 1/2.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 17 -->
+
+        <div class="question-card">
+
+            <h2>Question 17</h2>
+
+            <p class="question">
+                Which of the following is between 1/3 and 1/2?
+            </p>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q17')">
+                    A) 1/4
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q17')">
+                    B) 2/5
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q17')">
+                    C) 3/5
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q17')">
+                    D) 2/3
+                </button>
+
+            </div>
+
+            <div class="answer" id="q17">
+
+                <strong class="result"></strong>
+
+                <p>
+                    1/3 ≈ 0.333, 2/5 = 0.4, and 1/2 = 0.5. Therefore, 2/5 lies between them.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 18 -->
+
+        <div class="question-card">
+
+            <h2>Question 18</h2>
+
+            <p class="question">
+                What is 1 − 3/8?
+            </p>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q18')">
+                    A) 3/8
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q18')">
+                    B) 5/8
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q18')">
+                    C) 7/8
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q18')">
+                    D) 1/8
+                </button>
+
+            </div>
+
+            <div class="answer" id="q18">
+
+                <strong class="result"></strong>
+
+                <p>
+                    1 = 8/8, so 8/8 − 3/8 = 5/8.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 19 -->
+
+        <div class="question-card">
+
+            <h2>Question 19</h2>
+
+            <p class="question">
+                What is 4/5 ÷ 2/3?
+            </p>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q19')">
+                    A) 2/3
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q19')">
+                    B) 6/5
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q19')">
+                    C) 8/15
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q19')">
+                    D) 5/6
+                </button>
+
+            </div>
+
+            <div class="answer" id="q19">
+
+                <strong class="result"></strong>
+
+                <p>
+                    4/5 ÷ 2/3 = 4/5 × 3/2 = 12/10 = 6/5.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 20 -->
+
+        <div class="question-card">
+
+            <h2>Question 20</h2>
+
+            <p class="question">
+                Which of the following is equal to -0.75?
+            </p>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q20')">
+                    A) -1/2
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q20')">
+                    B) -3/4
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q20')">
+                    C) 3/4
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q20')">
+                    D) -1/4
+                </button>
+
+            </div>
+
+            <div class="answer" id="q20">
+
+                <strong class="result"></strong>
+
+                <p>
+                    0.75 = 3/4, so -0.75 = -3/4.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 21 -->
+
+        <div class="question-card">
+
+            <h2>Question 21</h2>
+
+            <p class="question">
+                If x = 2/3, what is 3x?
+            </p>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q21')">
+                    A) 1/3
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q21')">
+                    B) 2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q21')">
+                    C) 3
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q21')">
+                    D) 6
+                </button>
+
+            </div>
+
+            <div class="answer" id="q21">
+
+                <strong class="result"></strong>
+
+                <p>
+                    3 × 2/3 = 6/3 = 2.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 22 -->
+
+        <div class="question-card">
+
+            <h2>Question 22</h2>
+
+            <p class="question">
+                Which fraction is closest to 1?
+            </p>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q22')">
+                    A) 1/4
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q22')">
+                    B) 2/5
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q22')">
+                    C) 3/5
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q22')">
+                    D) 9/10
+                </button>
+
+            </div>
+
+            <div class="answer" id="q22">
+
+                <strong class="result"></strong>
+
+                <p>
+                    9/10 = 0.9, which is only 0.1 away from 1 and is therefore the closest.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 23 -->
+
+        <div class="question-card">
+
+            <h2>Question 23</h2>
+
+            <p class="question">
+                What is the value of (2/3)²?
+            </p>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q23')">
+                    A) 2/9
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q23')">
+                    B) 4/9
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q23')">
+                    C) 4/6
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q23')">
+                    D) 3/4
+                </button>
+
+            </div>
+
+            <div class="answer" id="q23">
+
+                <strong class="result"></strong>
+
+                <p>
+                    Square both numerator and denominator: (2/3)² = 4/9.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 24 -->
+
+        <div class="question-card">
+
+            <h2>Question 24</h2>
+
+            <p class="question">
+                If a/b = 3/4 and b = 20, what is a?
+            </p>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q24')">
+                    A) 12
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q24')">
+                    B) 15
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q24')">
+                    C) 16
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q24')">
+                    D) 18
+                </button>
+
+            </div>
+
+            <div class="answer" id="q24">
+
+                <strong class="result"></strong>
+
+                <p>
+                    a/20 = 3/4. Therefore, a = 20 × 3/4 = 15.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 25 -->
+
+        <div class="question-card">
+
+            <h2>Question 25</h2>
+
+            <p class="question">
+                What is the value of 1/(1/2)?
+            </p>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q25')">
+                    A) 1/2
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q25')">
+                    B) 2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q25')">
+                    C) 1
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q25')">
+                    D) 4
+                </button>
+
+            </div>
+
+            <div class="answer" id="q25">
+
+                <strong class="result"></strong>
+
+                <p>
+                    Dividing 1 by 1/2 is the same as multiplying by its reciprocal: 1 × 2 = 2.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+</main>
+
+
+<footer class="home-footer">
+
+    <p>
+        © 2026 Free Study Hub · Created by <strong>AHR</strong>
+    </p>
+
+</footer>
+
+
+<script>
+
+function checkAnswer(button, correct, answerId) {
+
+    const questionCard = button.closest(".question-card");
+
+    const buttons = questionCard.querySelectorAll(".options button");
+
+    const answer = document.getElementById(answerId);
+
+    const result = answer.querySelector(".result");
+
+
+    // Prevent selecting another answer
+
+    buttons.forEach(btn => {
+        btn.disabled = true;
+    });
+
+
+    if (correct) {
+
+        button.classList.add("correct");
+
+        result.textContent = "✓ Correct!";
+
+    } else {
+
+        button.classList.add("wrong");
+
+        result.textContent = "✗ Incorrect";
+
+
+        // Highlight the correct answer
+
+        buttons.forEach(btn => {
+
+            if (btn.getAttribute("onclick").includes("true")) {
+
+                btn.classList.add("correct");
+
+            }
+
+        });
+
+    }
+
+
+    // Show explanation
+
+    answer.style.display = "block";
+
+}
+
+</script>
+
+
+</body>
+
+</html>

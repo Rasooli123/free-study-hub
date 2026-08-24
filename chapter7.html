@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chapter 7: Simple Inequalities & Absolute Value | Free Study Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="top-header">
+
+    <div class="brand">
+        <div class="brand-icon">📖</div>
+
+        <div>
+            <h1>FREE <span>STUDY</span> HUB</h1>
+            <p>TR-YÖS Preparation</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">⌂ &nbsp; Home</a>
+        <a href="math1.html" class="active">Math 1</a>
+        <a href="math2.html">Math 2</a>
+    </nav>
+
+</header>
+
+
+<main class="chapter-page">
+
+    <section class="chapter-hero">
+        <span>MATHEMATICS 1</span>
+        <h1>Chapter 7: Simple Inequalities & Absolute Value</h1>
+        <p>Practice questions based on the chapter.</p>
+    </section>
+
+
+    <section class="questions">
+
+
+        <!-- QUESTION 1 -->
+
+        <div class="question-card">
+            <h2>1. Solve: 3x + 5 &gt; 17</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, true, 'q1')">A) x &gt; 4</button>
+                <button onclick="checkAnswer(this, false, 'q1')">B) x &gt; 6</button>
+                <button onclick="checkAnswer(this, false, 'q1')">C) x &lt; 4</button>
+                <button onclick="checkAnswer(this, false, 'q1')">D) x &lt; 6</button>
+            </div>
+
+            <div class="answer" id="q1">
+                <strong class="result"></strong>
+                <p>
+                    Subtract 5 from both sides:
+                    3x &gt; 12.
+                    Dividing by 3 gives x &gt; 4.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 2 -->
+
+        <div class="question-card">
+            <h2>2. Solve: 5 − 2x ≤ 11</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q2')">A) x ≤ −3</button>
+                <button onclick="checkAnswer(this, true, 'q2')">B) x ≥ −3</button>
+                <button onclick="checkAnswer(this, false, 'q2')">C) x ≤ 3</button>
+                <button onclick="checkAnswer(this, false, 'q2')">D) x ≥ 3</button>
+            </div>
+
+            <div class="answer" id="q2">
+                <strong class="result"></strong>
+                <p>
+                    Subtract 5:
+                    −2x ≤ 6.
+                    Dividing by −2 reverses the inequality:
+                    x ≥ −3.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 3 -->
+
+        <div class="question-card">
+            <h2>3. Which value satisfies 2x − 7 &lt; 9?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q3')">A) 10</button>
+                <button onclick="checkAnswer(this, true, 'q3')">B) 7</button>
+                <button onclick="checkAnswer(this, false, 'q3')">C) 9</button>
+                <button onclick="checkAnswer(this, false, 'q3')">D) 12</button>
+            </div>
+
+            <div class="answer" id="q3">
+                <strong class="result"></strong>
+                <p>
+                    2x − 7 &lt; 9 gives 2x &lt; 16, so x &lt; 8.
+                    Among the choices, only 7 satisfies the inequality.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 4 -->
+
+        <div class="question-card">
+            <h2>4. Solve: −4x &gt; 20</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, true, 'q4')">A) x &lt; −5</button>
+                <button onclick="checkAnswer(this, false, 'q4')">B) x &gt; −5</button>
+                <button onclick="checkAnswer(this, false, 'q4')">C) x &lt; 5</button>
+                <button onclick="checkAnswer(this, false, 'q4')">D) x &gt; 5</button>
+            </div>
+
+            <div class="answer" id="q4">
+                <strong class="result"></strong>
+                <p>
+                    Dividing both sides by −4 reverses the inequality.
+                    Therefore, x &lt; −5.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 5 -->
+
+        <div class="question-card">
+            <h2>5. Solve: 2 &lt; x + 3 ≤ 8</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q5')">A) −1 ≤ x &lt; 5</button>
+                <button onclick="checkAnswer(this, true, 'q5')">B) −1 &lt; x ≤ 5</button>
+                <button onclick="checkAnswer(this, false, 'q5')">C) 2 &lt; x ≤ 8</button>
+                <button onclick="checkAnswer(this, false, 'q5')">D) −3 &lt; x ≤ 3</button>
+            </div>
+
+            <div class="answer" id="q5">
+                <strong class="result"></strong>
+                <p>
+                    Subtract 3 from all three parts:
+                    2 − 3 &lt; x ≤ 8 − 3.
+                    Therefore, −1 &lt; x ≤ 5.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 6 -->
+
+        <div class="question-card">
+            <h2>6. If 3x − 4 ≥ 2x + 5, what is the smallest integer x?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q6')">A) 7</button>
+                <button onclick="checkAnswer(this, true, 'q6')">B) 9</button>
+                <button onclick="checkAnswer(this, false, 'q6')">C) 10</button>
+                <button onclick="checkAnswer(this, false, 'q6')">D) 11</button>
+            </div>
+
+            <div class="answer" id="q6">
+                <strong class="result"></strong>
+                <p>
+                    Subtract 2x:
+                    x − 4 ≥ 5.
+                    Therefore x ≥ 9.
+                    The smallest integer is 9.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 7 -->
+
+        <div class="question-card">
+            <h2>7. What is the solution of |x| = 6?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q7')">A) x = 6 only</button>
+                <button onclick="checkAnswer(this, false, 'q7')">B) x = −6 only</button>
+                <button onclick="checkAnswer(this, true, 'q7')">C) x = 6 or x = −6</button>
+                <button onclick="checkAnswer(this, false, 'q7')">D) x = 0</button>
+            </div>
+
+            <div class="answer" id="q7">
+                <strong class="result"></strong>
+                <p>
+                    The absolute value of a number represents its distance from zero.
+                    Both 6 and −6 have absolute value 6.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 8 -->
+
+        <div class="question-card">
+            <h2>8. Solve: |x| &lt; 4</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, true, 'q8')">A) −4 &lt; x &lt; 4</button>
+                <button onclick="checkAnswer(this, false, 'q8')">B) x &lt; −4 or x &gt; 4</button>
+                <button onclick="checkAnswer(this, false, 'q8')">C) x ≤ −4 or x ≥ 4</button>
+                <button onclick="checkAnswer(this, false, 'q8')">D) −4 ≤ x ≤ 4</button>
+            </div>
+
+            <div class="answer" id="q8">
+                <strong class="result"></strong>
+                <p>
+                    |x| &lt; 4 means that the distance of x from zero is less than 4.
+                    Therefore, −4 &lt; x &lt; 4.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 9 -->
+
+        <div class="question-card">
+            <h2>9. Solve: |x| ≤ 7</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q9')">A) −7 &lt; x &lt; 7</button>
+                <button onclick="checkAnswer(this, true, 'q9')">B) −7 ≤ x ≤ 7</button>
+                <button onclick="checkAnswer(this, false, 'q9')">C) x ≤ −7 or x ≥ 7</button>
+                <button onclick="checkAnswer(this, false, 'q9')">D) −7 &lt; x ≤ 7</button>
+            </div>
+
+            <div class="answer" id="q9">
+                <strong class="result"></strong>
+                <p>
+                    |x| ≤ 7 means x is at a distance of at most 7 from zero.
+                    Thus, −7 ≤ x ≤ 7.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 10 -->
+
+        <div class="question-card">
+            <h2>10. Solve: |x| &gt; 5</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q10')">A) −5 &lt; x &lt; 5</button>
+                <button onclick="checkAnswer(this, true, 'q10')">B) x &lt; −5 or x &gt; 5</button>
+                <button onclick="checkAnswer(this, false, 'q10')">C) −5 ≤ x ≤ 5</button>
+                <button onclick="checkAnswer(this, false, 'q10')">D) x ≥ −5</button>
+            </div>
+
+            <div class="answer" id="q10">
+                <strong class="result"></strong>
+                <p>
+                    |x| &gt; 5 means x is more than 5 units away from zero.
+                    Therefore, x &lt; −5 or x &gt; 5.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 11 -->
+
+        <div class="question-card">
+            <h2>11. Solve: |2x| = 10</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q11')">A) x = 5 only</button>
+                <button onclick="checkAnswer(this, false, 'q11')">B) x = −5 only</button>
+                <button onclick="checkAnswer(this, true, 'q11')">C) x = 5 or x = −5</button>
+                <button onclick="checkAnswer(this, false, 'q11')">D) x = 10 or x = −10</button>
+            </div>
+
+            <div class="answer" id="q11">
+                <strong class="result"></strong>
+                <p>
+                    |2x| = 10 means 2x = 10 or 2x = −10.
+                    Thus, x = 5 or x = −5.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 12 -->
+
+        <div class="question-card">
+            <h2>12. Solve: |x − 3| = 4</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q12')">A) x = 1 or 7</button>
+                <button onclick="checkAnswer(this, true, 'q12')">B) x = −1 or 7</button>
+                <button onclick="checkAnswer(this, false, 'q12')">C) x = −7 or 1</button>
+                <button onclick="checkAnswer(this, false, 'q12')">D) x = 3 or 4</button>
+            </div>
+
+            <div class="answer" id="q12">
+                <strong class="result"></strong>
+                <p>
+                    x − 3 = 4 gives x = 7.
+                    x − 3 = −4 gives x = −1.
+                    Therefore, x = −1 or x = 7.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 13 -->
+
+        <div class="question-card">
+            <h2>13. Solve: |x + 2| = 7</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, true, 'q13')">A) x = 5 or x = −9</button>
+                <button onclick="checkAnswer(this, false, 'q13')">B) x = 9 or x = −5</button>
+                <button onclick="checkAnswer(this, false, 'q13')">C) x = 5 only</button>
+                <button onclick="checkAnswer(this, false, 'q13')">D) x = −9 only</button>
+            </div>
+
+            <div class="answer" id="q13">
+                <strong class="result"></strong>
+                <p>
+                    x + 2 = 7 gives x = 5.
+                    x + 2 = −7 gives x = −9.
+                    Therefore, x = 5 or x = −9.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 14 -->
+
+        <div class="question-card">
+            <h2>14. Solve: |x − 1| &lt; 3</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, true, 'q14')">A) −2 &lt; x &lt; 4</button>
+                <button onclick="checkAnswer(this, false, 'q14')">B) −4 &lt; x &lt; 2</button>
+                <button onclick="checkAnswer(this, false, 'q14')">C) x &lt; −2 or x &gt; 4</button>
+                <button onclick="checkAnswer(this, false, 'q14')">D) −3 &lt; x &lt; 3</button>
+            </div>
+
+            <div class="answer" id="q14">
+                <strong class="result"></strong>
+                <p>
+                    |x − 1| &lt; 3 means:
+                    −3 &lt; x − 1 &lt; 3.
+                    Adding 1 throughout gives:
+                    −2 &lt; x &lt; 4.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 15 -->
+
+        <div class="question-card">
+            <h2>15. Solve: |2x − 1| ≤ 5</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q15')">A) −2 &lt; x ≤ 3</button>
+                <button onclick="checkAnswer(this, true, 'q15')">B) −2 ≤ x ≤ 3</button>
+                <button onclick="checkAnswer(this, false, 'q15')">C) −3 ≤ x ≤ 2</button>
+                <button onclick="checkAnswer(this, false, 'q15')">D) −5 ≤ x ≤ 5</button>
+            </div>
+
+            <div class="answer" id="q15">
+                <strong class="result"></strong>
+                <p>
+                    −5 ≤ 2x − 1 ≤ 5.
+                    Add 1:
+                    −4 ≤ 2x ≤ 6.
+                    Divide by 2:
+                    −2 ≤ x ≤ 3.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 16 -->
+
+        <div class="question-card">
+            <h2>16. Which value does NOT satisfy |x − 2| ≤ 4?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q16')">A) −2</button>
+                <button onclick="checkAnswer(this, false, 'q16')">B) 0</button>
+                <button onclick="checkAnswer(this, false, 'q16')">C) 5</button>
+                <button onclick="checkAnswer(this, true, 'q16')">D) 7</button>
+            </div>
+
+            <div class="answer" id="q16">
+                <strong class="result"></strong>
+                <p>
+                    |x − 2| ≤ 4 means −2 ≤ x ≤ 6.
+                    The value 7 is outside this interval, so it does not satisfy the inequality.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 17 -->
+
+        <div class="question-card">
+            <h2>17. If |x + 4| = 0, what is x?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q17')">A) 4</button>
+                <button onclick="checkAnswer(this, true, 'q17')">B) −4</button>
+                <button onclick="checkAnswer(this, false, 'q17')">C) 0</button>
+                <button onclick="checkAnswer(this, false, 'q17')">D) 8</button>
+            </div>
+
+            <div class="answer" id="q17">
+                <strong class="result"></strong>
+                <p>
+                    An absolute value equals zero only when the expression inside it is zero.
+                    Therefore:
+                    x + 4 = 0,
+                    so x = −4.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 18 -->
+
+        <div class="question-card">
+            <h2>18. If −3x + 7 &lt; 16, which statement is true?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, true, 'q18')">A) x &gt; −3</button>
+                <button onclick="checkAnswer(this, false, 'q18')">B) x &lt; −3</button>
+                <button onclick="checkAnswer(this, false, 'q18')">C) x ≥ −3</button>
+                <button onclick="checkAnswer(this, false, 'q18')">D) x ≤ −3</button>
+            </div>
+
+            <div class="answer" id="q18">
+                <strong class="result"></strong>
+                <p>
+                    −3x + 7 &lt; 16 gives −3x &lt; 9.
+                    Dividing by −3 reverses the inequality:
+                    x &gt; −3.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 19 -->
+
+        <div class="question-card">
+            <h2>19. Solve: 4(x − 2) ≥ 2x + 6</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q19')">A) x ≥ 4</button>
+                <button onclick="checkAnswer(this, true, 'q19')">B) x ≥ 7</button>
+                <button onclick="checkAnswer(this, false, 'q19')">C) x ≤ 7</button>
+                <button onclick="checkAnswer(this, false, 'q19')">D) x ≤ 4</button>
+            </div>
+
+            <div class="answer" id="q19">
+                <strong class="result"></strong>
+                <p>
+                    Expand:
+                    4x − 8 ≥ 2x + 6.
+                    Subtract 2x:
+                    2x − 8 ≥ 6.
+                    Add 8:
+                    2x ≥ 14.
+                    Therefore, x ≥ 7.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 20 -->
+
+        <div class="question-card">
+            <h2>20. Solve: 7 − 3x ≤ 2x − 8</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, true, 'q20')">A) x ≥ 3</button>
+                <button onclick="checkAnswer(this, false, 'q20')">B) x ≤ 3</button>
+                <button onclick="checkAnswer(this, false, 'q20')">C) x ≥ −3</button>
+                <button onclick="checkAnswer(this, false, 'q20')">D) x ≤ −3</button>
+            </div>
+
+            <div class="answer" id="q20">
+                <strong class="result"></strong>
+                <p>
+                    7 − 3x ≤ 2x − 8.
+                    Add 3x:
+                    7 ≤ 5x − 8.
+                    Add 8:
+                    15 ≤ 5x.
+                    Therefore, x ≥ 3.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 21 -->
+
+        <div class="question-card">
+            <h2>21. How many integer solutions satisfy |x| &lt; 4?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q21')">A) 6</button>
+                <button onclick="checkAnswer(this, true, 'q21')">B) 7</button>
+                <button onclick="checkAnswer(this, false, 'q21')">C) 8</button>
+                <button onclick="checkAnswer(this, false, 'q21')">D) 9</button>
+            </div>
+
+            <div class="answer" id="q21">
+                <strong class="result"></strong>
+                <p>
+                    |x| &lt; 4 means −4 &lt; x &lt; 4.
+                    The integer solutions are:
+                    −3, −2, −1, 0, 1, 2, 3.
+                    There are 7 integers.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 22 -->
+
+        <div class="question-card">
+            <h2>22. How many integers satisfy |x − 2| ≤ 3?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q22')">A) 5</button>
+                <button onclick="checkAnswer(this, true, 'q22')">B) 7</button>
+                <button onclick="checkAnswer(this, false, 'q22')">C) 6</button>
+                <button onclick="checkAnswer(this, false, 'q22')">D) 8</button>
+            </div>
+
+            <div class="answer" id="q22">
+                <strong class="result"></strong>
+                <p>
+                    |x − 2| ≤ 3 means:
+                    −3 ≤ x − 2 ≤ 3.
+                    Adding 2 gives:
+                    −1 ≤ x ≤ 5.
+                    The integers are −1, 0, 1, 2, 3, 4, 5, giving 7 solutions.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 23 -->
+
+        <div class="question-card">
+            <h2>23. If 2 &lt; 3x − 1 ≤ 11, what is the range of x?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, true, 'q23')">A) 1 &lt; x ≤ 4</button>
+                <button onclick="checkAnswer(this, false, 'q23')">B) 1 ≤ x &lt; 4</button>
+                <button onclick="checkAnswer(this, false, 'q23')">C) 2 &lt; x ≤ 11</button>
+                <button onclick="checkAnswer(this, false, 'q23')">D) −1 &lt; x ≤ 4</button>
+            </div>
+
+            <div class="answer" id="q23">
+                <strong class="result"></strong>
+                <p>
+                    Start with:
+                    2 &lt; 3x − 1 ≤ 11.
+                    Add 1:
+                    3 &lt; 3x ≤ 12.
+                    Divide by 3:
+                    1 &lt; x ≤ 4.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 24 -->
+
+        <div class="question-card">
+            <h2>24. Which inequality is equivalent to |x + 1| ≥ 4?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q24')">A) −4 ≤ x + 1 ≤ 4</button>
+                <button onclick="checkAnswer(this, true, 'q24')">B) x + 1 ≤ −4 or x + 1 ≥ 4</button>
+                <button onclick="checkAnswer(this, false, 'q24')">C) −4 &lt; x + 1 &lt; 4</button>
+                <button onclick="checkAnswer(this, false, 'q24')">D) x + 1 ≥ −4</button>
+            </div>
+
+            <div class="answer" id="q24">
+                <strong class="result"></strong>
+                <p>
+                    For |A| ≥ k, the expression A must be at least k units
+                    from zero in either direction.
+                    Therefore:
+                    x + 1 ≤ −4 or x + 1 ≥ 4.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 25 -->
+
+        <div class="question-card">
+            <h2>25. If |2x − 3| &lt; 7, which interval contains all possible values of x?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, true, 'q25')">A) −2 &lt; x &lt; 5</button>
+                <button onclick="checkAnswer(this, false, 'q25')">B) −5 &lt; x &lt; 2</button>
+                <button onclick="checkAnswer(this, false, 'q25')">C) −2 ≤ x ≤ 5</button>
+                <button onclick="checkAnswer(this, false, 'q25')">D) −5 ≤ x ≤ 2</button>
+            </div>
+
+            <div class="answer" id="q25">
+                <strong class="result"></strong>
+                <p>
+                    −7 &lt; 2x − 3 &lt; 7.
+                    Add 3:
+                    −4 &lt; 2x &lt; 10.
+                    Divide by 2:
+                    −2 &lt; x &lt; 5.
+                </p>
+            </div>
+        </div>
+
+
+    </section>
+
+</main>
+
+
+<footer class="home-footer">
+    <p>© 2026 Free Study Hub · Created by <strong>AHR</strong></p>
+</footer>
+
+
+<script>
+
+function checkAnswer(button, correct, answerId) {
+
+    const questionCard = button.closest(".question-card");
+    const buttons = questionCard.querySelectorAll(".options button");
+    const answer = document.getElementById(answerId);
+    const result = answer.querySelector(".result");
+
+    buttons.forEach(btn => {
+        btn.disabled = true;
+    });
+
+    if (correct) {
+
+        button.classList.add("correct");
+        result.textContent = "✓ Correct!";
+
+    } else {
+
+        button.classList.add("wrong");
+        result.textContent = "✗ Incorrect";
+
+        buttons.forEach(btn => {
+
+            if (btn.getAttribute("onclick").includes("true")) {
+                btn.classList.add("correct");
+            }
+
+        });
+    }
+
+    answer.style.display = "block";
+}
+
+</script>
+
+</body>
+</html>

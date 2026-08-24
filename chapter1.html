@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Concepts | Free Study Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="top-header">
+    <div class="brand">
+    <div class="brand-icon">📖</div>
+
+    <div>
+        <h1>FREE <span>STUDY</span> HUB</h1>
+        <p>TR-YÖS Preparation</p>
+    </div>
+</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="math1.html">Math 1</a>
+        <a href="math2.html">Math 2</a>
+    </nav>
+</header>
+
+
+<main class="chapter-page">
+
+    <section class="chapter-hero">
+        <span>MATHEMATICS 1</span>
+
+        <h1>Chapter 1: Basic Concepts</h1>
+
+        <p>Practice questions based on the chapter.</p>
+    </section>
+
+
+    <section class="questions">
+
+    <!-- QUESTION 1 -->
+    <div class="question-card">
+        <h2>Question 1</h2>
+
+        <p class="question">
+            Which of the following numbers is irrational?
+        </p>
+
+        <div class="options">
+            <button onclick="checkAnswer(this, false, 'q1')">A) 1/2</button>
+            <button onclick="checkAnswer(this, true, 'q1')">B) √2</button>
+            <button onclick="checkAnswer(this, false, 'q1')">C) -3</button>
+            <button onclick="checkAnswer(this, false, 'q1')">D) 0.75</button>
+        </div>
+
+        <div class="answer" id="q1">
+            <strong class="result"></strong>
+            <p>√2 cannot be written as a fraction of two integers, so it is irrational.</p>
+        </div>
+    </div>
+
+
+    <!-- QUESTION 2 -->
+    <div class="question-card">
+        <h2>Question 2</h2>
+
+        <p class="question">
+            Which of the following is a natural number?
+        </p>
+
+        <div class="options">
+            <button onclick="checkAnswer(this, false, 'q2')">A) -4</button>
+            <button onclick="checkAnswer(this, true, 'q2')">B) 7</button>
+            <button onclick="checkAnswer(this, false, 'q2')">C) -1/2</button>
+            <button onclick="checkAnswer(this, false, 'q2')">D) √3</button>
+        </div>
+
+        <div class="answer" id="q2">
+            <strong class="result"></strong>
+            <p>7 is a positive integer, so it is a natural number.</p>
+        </div>
+    </div>
+
+
+    <!-- QUESTION 3 -->
+    <div class="question-card">
+        <h2>Question 3</h2>
+
+        <p class="question">
+            Which of the following numbers is an integer but not a natural number?
+        </p>
+
+        <div class="options">
+            <button onclick="checkAnswer(this, false, 'q3')">A) 5</button>
+            <button onclick="checkAnswer(this, true, 'q3')">B) -3</button>
+            <button onclick="checkAnswer(this, false, 'q3')">C) 2.5</button>
+            <button onclick="checkAnswer(this, false, 'q3')">D) √5</button>
+        </div>
+
+        <div class="answer" id="q3">
+            <strong class="result"></strong>
+            <p>-3 is an integer, but it is negative and therefore is not a natural number.</p>
+        </div>
+    </div>
+
+
+    <!-- QUESTION 4 -->
+    <div class="question-card">
+        <h2>Question 4</h2>
+
+        <p class="question">
+            Which of the following is a rational number?
+        </p>
+
+        <div class="options">
+            <button onclick="checkAnswer(this, false, 'q4')">A) √2</button>
+            <button onclick="checkAnswer(this, false, 'q4')">B) √7</button>
+            <button onclick="checkAnswer(this, true, 'q4')">C) 0.125</button>
+            <button onclick="checkAnswer(this, false, 'q4')">D) π</button>
+        </div>
+
+        <div class="answer" id="q4">
+            <strong class="result"></strong>
+            <p>0.125 is a terminating decimal, so it can be written as a fraction: 125/1000 = 1/8.</p>
+        </div>
+    </div>
+
+
+    <!-- QUESTION 5 -->
+    <div class="question-card">
+        <h2>Question 5</h2>
+
+        <p class="question">
+            What is the absolute value of -12?
+        </p>
+
+        <div class="options">
+            <button onclick="checkAnswer(this, false, 'q5')">A) -12</button>
+            <button onclick="checkAnswer(this, true, 'q5')">B) 12</button>
+            <button onclick="checkAnswer(this, false, 'q5')">C) 0</button>
+            <button onclick="checkAnswer(this, false, 'q5')">D) 1</button>
+        </div>
+
+        <div class="answer" id="q5">
+            <strong class="result"></strong>
+            <p>The absolute value represents distance from zero. Therefore, |-12| = 12.</p>
+        </div>
+    </div>
+
+
+    <!-- QUESTION 6 -->
+    <div class="question-card">
+        <h2>Question 6</h2>
+
+        <p class="question">
+            If x = -4, what is the value of |x| + x?
+        </p>
+
+        <div class="options">
+            <button onclick="checkAnswer(this, false, 'q6')">A) -8</button>
+            <button onclick="checkAnswer(this, true, 'q6')">B) 0</button>
+            <button onclick="checkAnswer(this, false, 'q6')">C) 4</button>
+            <button onclick="checkAnswer(this, false, 'q6')">D) 8</button>
+        </div>
+
+        <div class="answer" id="q6">
+            <strong class="result"></strong>
+            <p>|-4| + (-4) = 4 - 4 = 0.</p>
+        </div>
+    </div>
+
+
+    <!-- QUESTION 7 -->
+    <div class="question-card">
+        <h2>Question 7</h2>
+
+        <p class="question">
+            Which of the following is the greatest number?
+        </p>
+
+        <div class="options">
+            <button onclick="checkAnswer(this, false, 'q7')">A) -2</button>
+            <button onclick="checkAnswer(this, false, 'q7')">B) -5</button>
+            <button onclick="checkAnswer(this, true, 'q7')">C) 0</button>
+            <button onclick="checkAnswer(this, false, 'q7')">D) -1</button>
+        </div>
+
+        <div class="answer" id="q7">
+            <strong class="result"></strong>
+            <p>Every negative number is less than zero, so 0 is the greatest number among the choices.</p>
+        </div>
+    </div>
+
+
+    <!-- QUESTION 8 -->
+    <div class="question-card">
+        <h2>Question 8</h2>
+
+        <p class="question">
+            Which statement is true?
+        </p>
+
+        <div class="options">
+            <button onclick="checkAnswer(this, false, 'q8')">A) Every integer is a natural number.</button>
+            <button onclick="checkAnswer(this, true, 'q8')">B) Every natural number is an integer.</button>
+            <button onclick="checkAnswer(this, false, 'q8')">C) Every rational number is an integer.</button>
+            <button onclick="checkAnswer(this, false, 'q8')">D) Every irrational number is an integer.</button>
+        </div>
+
+        <div class="answer" id="q8">
+            <strong class="result"></strong>
+            <p>Natural numbers are a subset of the integers, so every natural number is an integer.</p>
+        </div>
+    </div>
+
+
+    <!-- QUESTION 9 -->
+    <div class="question-card">
+        <h2>Question 9</h2>
+
+        <p class="question">
+            What is the result of (-8) + 13?
+        </p>
+
+        <div class="options">
+            <button onclick="checkAnswer(this, false, 'q9')">A) -21</button>
+            <button onclick="checkAnswer(this, false, 'q9')">B) -5</button>
+            <button onclick="checkAnswer(this, true, 'q9')">C) 5</button>
+            <button onclick="checkAnswer(this, false, 'q9')">D) 21</button>
+        </div>
+
+        <div class="answer" id="q9">
+            <strong class="result"></strong>
+            <p>-8 + 13 = 5.</p>
+        </div>
+    </div>
+
+
+    <!-- QUESTION 10 -->
+    <div class="question-card">
+        <h2>Question 10</h2>
+
+        <p class="question">
+            What is the result of (-6) × (-4)?
+        </p>
+
+        <div class="options">
+            <button onclick="checkAnswer(this, false, 'q10')">A) -24</button>
+            <button onclick="checkAnswer(this, true, 'q10')">B) 24</button>
+            <button onclick="checkAnswer(this, false, 'q10')">C) -10</button>
+            <button onclick="checkAnswer(this, false, 'q10')">D) 10</button>
+        </div>
+
+        <div class="answer" id="q10">
+            <strong class="result"></strong>
+            <p>The product of two negative numbers is positive: (-6)(-4) = 24.</p>
+        </div>
+    </div>
+
+
+    <!-- QUESTION 11 -->
+    <div class="question-card">
+        <h2>Question 11</h2>
+
+        <p class="question">
+            What is the result of 18 ÷ (-3)?
+        </p>
+
+        <div class="options">
+            <button onclick="checkAnswer(this, false, 'q11')">A) 6</button>
+            <button onclick="checkAnswer(this, true, 'q11')">B) -6</button>
+            <button onclick="checkAnswer(this, false, 'q11')">C) 15</button>
+            <button onclick="checkAnswer(this, false, 'q11')">D) -15</button>
+        </div>
+
+        <div class="answer" id="q11">
+            <strong class="result"></strong>
+            <p>A positive number divided by a negative number gives a negative result: 18 ÷ (-3) = -6.</p>
+        </div>
+    </div>
+
+
+    <!-- QUESTION 12 -->
+    <div class="question-card">
+        <h2>Question 12</h2>
+
+        <p class="question">
+            Which expression is equal to 3² + 4²?
+        </p>
+
+        <div class="options">
+            <button onclick="checkAnswer(this, false, 'q12')">A) 12</button>
+            <button onclick="checkAnswer(this, false, 'q12')">B) 18</button>
+            <button onclick="checkAnswer(this, true, 'q12')">C) 25</button>
+            <button onclick="checkAnswer(this, false, 'q12')">D) 49</button>
+        </div>
+
+        <div class="answer" id="q12">
+            <strong class="result"></strong>
+            <p>3² + 4² = 9 + 16 = 25.</p>
+        </div>
+    </div>
+
+
+    <!-- QUESTION 13 -->
+    <div class="question-card">
+        <h2>Question 13</h2>
+
+        <p class="question">
+            If a = 5 and b = -2, what is a - b?
+        </p>
+
+        <div class="options">
+            <button onclick="checkAnswer(this, false, 'q13')">A) 3</button>
+            <button onclick="checkAnswer(this, false, 'q13')">B) -7</button>
+            <button onclick="checkAnswer(this, true, 'q13')">C) 7</button>
+            <button onclick="checkAnswer(this, false, 'q13')">D) -3</button>
+        </div>
+
+        <div class="answer" id="q13">
+            <strong class="result"></strong>
+            <p>a - b = 5 - (-2) = 5 + 2 = 7.</p>
+        </div>
+    </div>
+
+
+    <!-- QUESTION 14 -->
+    <div class="question-card">
+        <h2>Question 14</h2>
+
+        <p class="question">
+            Which of the following is NOT a rational number?
+        </p>
+
+        <div class="options">
+            <button onclick="checkAnswer(this, false, 'q14')">A) 3/7</button>
+            <button onclick="checkAnswer(this, false, 'q14')">B) -5</button>
+            <button onclick="checkAnswer(this, true, 'q14')">C) √11</button>
+            <button onclick="checkAnswer(this, false, 'q14')">D) 0.4</button>
+        </div>
+
+        <div class="answer" id="q14">
+            <strong class="result"></strong>
+            <p>√11 is irrational because 11 is not a perfect square.</p>
+        </div>
+    </div>
+
+
+    <!-- QUESTION 15 -->
+    <div class="question-card">
+        <h2>Question 15</h2>
+
+        <p class="question">
+            What is the value of |5 - 12|?
+        </p>
+
+        <div class="options">
+            <button onclick="checkAnswer(this, false, 'q15')">A) -7</button>
+            <button onclick="checkAnswer(this, true, 'q15')">B) 7</button>
+            <button onclick="checkAnswer(this, false, 'q15')">C) 17</button>
+            <button onclick="checkAnswer(this, false, 'q15')">D) -17</button>
+        </div>
+
+        <div class="answer" id="q15">
+            <strong class="result"></strong>
+            <p>5 - 12 = -7, and |-7| = 7.</p>
+        </div>
+    </div>
+
+
+    <!-- QUESTION 16 -->
+    <div class="question-card">
+        <h2>Question 16</h2>
+
+        <p class="question">
+            Which number lies between 2 and 3?
+        </p>
+
+        <div class="options">
+            <button onclick="checkAnswer(this, false, 'q16')">A) 1.5</button>
+            <button onclick="checkAnswer(this, true, 'q16')">B) √5</button>
+            <button onclick="checkAnswer(this, false, 'q16')">C) 3.5</button>
+            <button onclick="checkAnswer(this, false, 'q16')">D) 4</button>
+        </div>
+
+        <div class="answer" id="q16">
+            <strong class="result"></strong>
+            <p>Since 4 < 5 < 9, we have 2 < √5 < 3.</p>
+        </div>
+    </div>
+
+
+    <!-- QUESTION 17 -->
+    <div class="question-card">
+        <h2>Question 17</h2>
+
+        <p class="question">
+            If x is a positive integer and x &lt; 6, which of the following could be x?
+        </p>
+
+        <div class="options">
+            <button onclick="checkAnswer(this, false, 'q17')">A) 0</button>
+            <button onclick="checkAnswer(this, true, 'q17')">B) 5</button>
+            <button onclick="checkAnswer(this, false, 'q17')">C) 6</button>
+            <button onclick="checkAnswer(this, false, 'q17')">D) 8</button>
+        </div>
+
+        <div class="answer" id="q17">
+            <strong class="result"></strong>
+            <p>The positive integers less than 6 are 1, 2, 3, 4, and 5.</p>
+        </div>
+    </div>
+
+
+    <!-- QUESTION 18 -->
+    <div class="question-card">
+        <h2>Question 18</h2>
+
+        <p class="question">
+            What is the value of 2(3 + 4) - 5?
+        </p>
+
+        <div class="options">
+            <button onclick="checkAnswer(this, false, 'q18')">A) 7</button>
+            <button onclick="checkAnswer(this, true, 'q18')">B) 9</button>
+            <button onclick="checkAnswer(this, false, 'q18')">C) 14</button>
+            <button onclick="checkAnswer(this, false, 'q18')">D) 19</button>
+        </div>
+
+        <div class="answer" id="q18">
+            <strong class="result"></strong>
+            <p>First calculate the parentheses: 3 + 4 = 7. Then 2 × 7 - 5 = 14 - 5 = 9.</p>
+        </div>
+    </div>
+
+
+    <!-- QUESTION 19 -->
+    <div class="question-card">
+        <h2>Question 19</h2>
+
+        <p class="question">
+            Which of the following has the smallest value?
+        </p>
+
+        <div class="options">
+            <button onclick="checkAnswer(this, false, 'q19')">A) -1/2</button>
+            <button onclick="checkAnswer(this, true, 'q19')">B) -3/2</button>
+            <button onclick="checkAnswer(this, false, 'q19')">C) 0</button>
+            <button onclick="checkAnswer(this, false, 'q19')">D) 1/2</button>
+        </div>
+
+        <div class="answer" id="q19">
+            <strong class="result"></strong>
+            <p>-3/2 = -1.5, which is smaller than -0.5, 0, and 0.5.</p>
+        </div>
+    </div>
+
+
+    <!-- QUESTION 20 -->
+    <div class="question-card">
+        <h2>Question 20</h2>
+
+        <p class="question">
+            If |x| = 7, which of the following could be x?
+        </p>
+
+        <div class="options">
+            <button onclick="checkAnswer(this, false, 'q20')">A) 0</button>
+            <button onclick="checkAnswer(this, true, 'q20')">B) -7</button>
+            <button onclick="checkAnswer(this, false, 'q20')">C) 5</button>
+            <button onclick="checkAnswer(this, false, 'q20')">D) -5</button>
+        </div>
+
+        <div class="answer" id="q20">
+            <strong class="result"></strong>
+            <p>If |x| = 7, then x can be 7 or -7. Therefore, -7 is a possible value.</p>
+        </div>
+    </div>
+
+
+    <!-- QUESTION 21 -->
+    <div class="question-card">
+        <h2>Question 21</h2>
+
+        <p class="question">
+            Which of the following is equal to 0?
+        </p>
+
+        <div class="options">
+            <button onclick="checkAnswer(this, false, 'q21')">A) (-4) + (-4)</button>
+            <button onclick="checkAnswer(this, true, 'q21')">B) (-4) + 4</button>
+            <button onclick="checkAnswer(this, false, 'q21')">C) 4 × 4</button>
+            <button onclick="checkAnswer(this, false, 'q21')">D) 4 - (-4)</button>
+        </div>
+
+        <div class="answer" id="q21">
+            <strong class="result"></strong>
+            <p>A number plus its opposite is zero: -4 + 4 = 0.</p>
+        </div>
+    </div>
+
+
+    <!-- QUESTION 22 -->
+    <div class="question-card">
+        <h2>Question 22</h2>
+
+        <p class="question">
+            If a = -3 and b = 4, what is a × b?
+        </p>
+
+        <div class="options">
+            <button onclick="checkAnswer(this, false, 'q22')">A) 12</button>
+            <button onclick="checkAnswer(this, true, 'q22')">B) -12</button>
+            <button onclick="checkAnswer(this, false, 'q22')">C) 1</button>
+            <button onclick="checkAnswer(this, false, 'q22')">D) -1</button>
+        </div>
+
+        <div class="answer" id="q22">
+            <strong class="result"></strong>
+            <p>A negative number multiplied by a positive number gives a negative result: (-3)(4) = -12.</p>
+        </div>
+    </div>
+
+
+    <!-- QUESTION 23 -->
+    <div class="question-card">
+        <h2>Question 23</h2>
+
+        <p class="question">
+            Which of the following is equal to 1?
+        </p>
+
+        <div class="options">
+            <button onclick="checkAnswer(this, false, 'q23')">A) 0⁰</button>
+            <button onclick="checkAnswer(this, true, 'q23')">B) 5⁰</button>
+            <button onclick="checkAnswer(this, false, 'q23')">C) 5¹</button>
+            <button onclick="checkAnswer(this, false, 'q23')">D) 1⁰</button>
+        </div>
+
+        <div class="answer" id="q23">
+            <strong class="result"></strong>
+            <p>Any nonzero number raised to the power of 0 equals 1. Therefore, 5⁰ = 1.</p>
+        </div>
+    </div>
+
+
+    <!-- QUESTION 24 -->
+    <div class="question-card">
+        <h2>Question 24</h2>
+
+        <p class="question">
+            Which of the following is greater than 0 but less than 1?
+        </p>
+
+        <div class="options">
+            <button onclick="checkAnswer(this, false, 'q24')">A) -0.5</button>
+            <button onclick="checkAnswer(this, true, 'q24')">B) 0.6</button>
+            <button onclick="checkAnswer(this, false, 'q24')">C) 1.2</button>
+            <button onclick="checkAnswer(this, false, 'q24')">D) 2</button>
+        </div>
+
+        <div class="answer" id="q24">
+            <strong class="result"></strong>
+            <p>0.6 is greater than 0 and less than 1.</p>
+        </div>
+    </div>
+
+
+    <!-- QUESTION 25 -->
+    <div class="question-card">
+        <h2>Question 25</h2>
+
+        <p class="question">
+            If x = -2, what is x² + |x|?
+        </p>
+
+        <div class="options">
+            <button onclick="checkAnswer(this, false, 'q25')">A) 2</button>
+            <button onclick="checkAnswer(this, false, 'q25')">B) 4</button>
+            <button onclick="checkAnswer(this, true, 'q25')">C) 6</button>
+            <button onclick="checkAnswer(this, false, 'q25')">D) -6</button>
+        </div>
+
+        <div class="answer" id="q25">
+            <strong class="result"></strong>
+            <p>x² + |x| = (-2)² + |-2| = 4 + 2 = 6.</p>
+        </div>
+    </div>
+
+</section>
+
+</main>
+
+
+<footer class="home-footer">
+    <p>
+        © 2026 Free Study Hub · Created by <strong>AHR</strong>
+    </p>
+</footer>
+
+
+<script>
+
+function checkAnswer(button, correct, answerId) {
+
+    const questionCard = button.closest(".question-card");
+    const buttons = questionCard.querySelectorAll(".options button");
+    const answer = document.getElementById(answerId);
+    const result = answer.querySelector(".result");
+
+    // Prevent choosing another answer
+    buttons.forEach(btn => {
+        btn.disabled = true;
+    });
+
+    if (correct) {
+
+        button.classList.add("correct");
+
+        result.textContent = "✓ Correct!";
+
+    } else {
+
+        button.classList.add("wrong");
+
+        result.textContent = "✗ Incorrect";
+
+        // Find and highlight the correct answer
+        buttons.forEach(btn => {
+
+            if (btn.getAttribute("onclick").includes("true")) {
+                btn.classList.add("correct");
+            }
+
+        });
+
+    }
+
+    // Show explanation
+    answer.style.display = "block";
+}
+
+</script>
+
+</body>
+</html>

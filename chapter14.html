@@ -1,0 +1,1236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chapter 14 - Modular Arithmetic | Free Study Hub</title>
+
+    <meta
+        name="description"
+        content="TR-YÖS Mathematics 1 Chapter 14: Modular Arithmetic. Practice 25 questions with explanations."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="top-header">
+
+    <div class="brand">
+
+        <div class="brand-icon">
+            📖
+        </div>
+
+        <div>
+            <h1>
+                FREE <span>STUDY</span> HUB
+            </h1>
+
+            <p>
+                TR-YÖS Preparation
+            </p>
+        </div>
+
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            ⌂ &nbsp; Home
+        </a>
+
+        <a href="math1.html" class="active">
+            Math 1
+        </a>
+
+        <a href="math2.html">
+            Math 2
+        </a>
+
+        <a href="iq.html">
+            IQ
+        </a>
+
+        <a href="geometry.html">
+            Geometry
+        </a>
+
+        <a href="books.html">
+            📚 Books
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="chapter-page">
+
+    <section class="chapter-hero">
+
+        <p>
+            MATHEMATICS 1
+        </p>
+
+        <h1>
+            Modular Arithmetic
+        </h1>
+
+        <span>
+            Chapter 14 · 25 Questions
+        </span>
+
+    </section>
+
+
+    <section class="questions">
+
+
+        <!-- QUESTION 1 -->
+
+        <div class="question-card">
+
+            <h2>
+                1. What is the remainder when 17 is divided by 5?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q1')">
+                    A) 1
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q1')">
+                    B) 2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q1')">
+                    C) 3
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q1')">
+                    D) 4
+                </button>
+
+            </div>
+
+            <div class="answer" id="q1">
+
+                <strong class="result"></strong>
+
+                <p>
+                    17 = 5 × 3 + 2.
+                    Therefore, the remainder is 2.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 2 -->
+
+        <div class="question-card">
+
+            <h2>
+                2. What is the remainder when 29 is divided by 6?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q2')">
+                    A) 3
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q2')">
+                    B) 5
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q2')">
+                    C) 4
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q2')">
+                    D) 1
+                </button>
+
+            </div>
+
+            <div class="answer" id="q2">
+
+                <strong class="result"></strong>
+
+                <p>
+                    29 = 6 × 4 + 5.
+                    Therefore, the remainder is 5.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 3 -->
+
+        <div class="question-card">
+
+            <h2>
+                3. Which number is congruent to 4 modulo 7?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q3')">
+                    A) 9
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q3')">
+                    B) 11
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q3')">
+                    C) 12
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q3')">
+                    D) 13
+                </button>
+
+            </div>
+
+            <div class="answer" id="q3">
+
+                <strong class="result"></strong>
+
+                <p>
+                    11 = 7 + 4.
+                    Therefore, 11 leaves remainder 4 when divided by 7.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 4 -->
+
+        <div class="question-card">
+
+            <h2>
+                4. What is the remainder when 45 is divided by 8?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q4')">
+                    A) 3
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q4')">
+                    B) 4
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q4')">
+                    C) 5
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q4')">
+                    D) 6
+                </button>
+
+            </div>
+
+            <div class="answer" id="q4">
+
+                <strong class="result"></strong>
+
+                <p>
+                    45 = 8 × 5 + 5.
+                    Therefore, the remainder is 5.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 5 -->
+
+        <div class="question-card">
+
+            <h2>
+                5. If a number leaves remainder 3 when divided by 7,
+                what remainder will the number + 5 leave when divided by 7?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q5')">
+                    A) 0
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q5')">
+                    B) 1
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q5')">
+                    C) 2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q5')">
+                    D) 3
+                </button>
+
+            </div>
+
+            <div class="answer" id="q5">
+
+                <strong class="result"></strong>
+
+                <p>
+                    The original remainder is 3.
+                    Adding 5 gives 8.
+                    Since 8 leaves remainder 1 when divided by 7,
+                    the answer is 1.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 6 -->
+
+        <div class="question-card">
+
+            <h2>
+                6. If n ≡ 2 (mod 5), what is the remainder of n + 7
+                when divided by 5?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q6')">
+                    A) 4
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q6')">
+                    B) 3
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q6')">
+                    C) 2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q6')">
+                    D) 1
+                </button>
+
+            </div>
+
+            <div class="answer" id="q6">
+
+                <strong class="result"></strong>
+
+                <p>
+                    n has remainder 2.
+                    7 has remainder 2 modulo 5.
+                    Therefore, 2 + 2 = 4.
+                    The remainder is 4.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 7 -->
+
+        <div class="question-card">
+
+            <h2>
+                7. What is the remainder when 38 + 27 is divided by 5?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q7')">
+                    A) 0
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q7')">
+                    B) 1
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q7')">
+                    C) 2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q7')">
+                    D) 3
+                </button>
+
+            </div>
+
+            <div class="answer" id="q7">
+
+                <strong class="result"></strong>
+
+                <p>
+                    38 + 27 = 65.
+                    Since 65 is divisible by 5,
+                    the remainder is 0.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 8 -->
+
+        <div class="question-card">
+
+            <h2>
+                8. What is the remainder when 7 × 13 is divided by 5?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q8')">
+                    A) 1
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q8')">
+                    B) 2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q8')">
+                    C) 3
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q8')">
+                    D) 4
+                </button>
+
+            </div>
+
+            <div class="answer" id="q8">
+
+                <strong class="result"></strong>
+
+                <p>
+                    7 × 13 = 91.
+                    91 = 5 × 18 + 1.
+                    Therefore, the remainder is 1.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 9 -->
+
+        <div class="question-card">
+
+            <h2>
+                9. If n ≡ 4 (mod 6), which of the following could be n?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q9')">
+                    A) 15
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q9')">
+                    B) 16
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q9')">
+                    C) 17
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q9')">
+                    D) 18
+                </button>
+
+            </div>
+
+            <div class="answer" id="q9">
+
+                <strong class="result"></strong>
+
+                <p>
+                    16 = 6 × 2 + 4.
+                    Therefore, 16 has remainder 4 when divided by 6.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 10 -->
+
+        <div class="question-card">
+
+            <h2>
+                10. What is the remainder when 2² + 3² is divided by 5?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q10')">
+                    A) 3
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q10')">
+                    B) 2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q10')">
+                    C) 1
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q10')">
+                    D) 4
+                </button>
+
+            </div>
+
+            <div class="answer" id="q10">
+
+                <strong class="result"></strong>
+
+                <p>
+                    2² + 3² = 4 + 9 = 13.
+                    13 leaves remainder 3 when divided by 5.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 11 -->
+
+        <div class="question-card">
+
+            <h2>
+                11. What is the remainder when 3⁴ is divided by 5?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q11')">
+                    A) 1
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q11')">
+                    B) 2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q11')">
+                    C) 3
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q11')">
+                    D) 4
+                </button>
+
+            </div>
+
+            <div class="answer" id="q11">
+
+                <strong class="result"></strong>
+
+                <p>
+                    3⁴ = 81.
+                    81 = 5 × 16 + 1.
+                    Therefore, the remainder is 1.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 12 -->
+
+        <div class="question-card">
+
+            <h2>
+                12. If n ≡ 5 (mod 8), what is the remainder of 3n
+                when divided by 8?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q12')">
+                    A) 3
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q12')">
+                    B) 5
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q12')">
+                    C) 7
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q12')">
+                    D) 1
+                </button>
+
+            </div>
+
+            <div class="answer" id="q12">
+
+                <strong class="result"></strong>
+
+                <p>
+                    Since n has remainder 5,
+                    3n has the same remainder as 3 × 5 = 15.
+                    15 leaves remainder 7 when divided by 8.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 13 -->
+
+        <div class="question-card">
+
+            <h2>
+                13. What is the remainder when 10² + 10³ is divided by 9?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q13')">
+                    A) 0
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q13')">
+                    B) 1
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q13')">
+                    C) 2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q13')">
+                    D) 3
+                </button>
+
+            </div>
+
+            <div class="answer" id="q13">
+
+                <strong class="result"></strong>
+
+                <p>
+                    10 ≡ 1 (mod 9).
+                    Therefore:
+                    10² + 10³ ≡ 1² + 1³ = 2 (mod 9).
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 14 -->
+
+        <div class="question-card">
+
+            <h2>
+                14. A number gives remainder 2 when divided by 4.
+                What remainder does its square give when divided by 4?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q14')">
+                    A) 0
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q14')">
+                    B) 1
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q14')">
+                    C) 2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q14')">
+                    D) 3
+                </button>
+
+            </div>
+
+            <div class="answer" id="q14">
+
+                <strong class="result"></strong>
+
+                <p>
+                    If n ≡ 2 (mod 4), then:
+                    n² ≡ 2² = 4 ≡ 0 (mod 4).
+                    Therefore, the remainder is 0.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 15 -->
+
+        <div class="question-card">
+
+            <h2>
+                15. What is the remainder when 2⁵ is divided by 7?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q15')">
+                    A) 1
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q15')">
+                    B) 2
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q15')">
+                    C) 4
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q15')">
+                    D) 5
+                </button>
+
+            </div>
+
+            <div class="answer" id="q15">
+
+                <strong class="result"></strong>
+
+                <p>
+                    2⁵ = 32.
+                    32 = 7 × 4 + 4.
+                    Therefore, the remainder is 4.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 16 -->
+
+        <div class="question-card">
+
+            <h2>
+                16. If n ≡ 3 (mod 7), what is the remainder of
+                n² + 2n when divided by 7?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q16')">
+                    A) 1
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q16')">
+                    B) 2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q16')">
+                    C) 3
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q16')">
+                    D) 5
+                </button>
+
+            </div>
+
+            <div class="answer" id="q16">
+
+                <strong class="result"></strong>
+
+                <p>
+                    Substitute the remainder 3:
+                    n² + 2n ≡ 3² + 2(3)
+                    = 9 + 6
+                    = 15.
+                    15 leaves remainder 1 when divided by 7.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 17 -->
+
+        <div class="question-card">
+
+            <h2>
+                17. What is the remainder when 4³ + 5 is divided by 7?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q17')">
+                    A) 0
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q17')">
+                    B) 6
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q17')">
+                    C) 5
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q17')">
+                    D) 4
+                </button>
+
+            </div>
+
+            <div class="answer" id="q17">
+
+                <strong class="result"></strong>
+
+                <p>
+                    4³ = 64.
+                    64 + 5 = 69.
+                    Since 69 = 7 × 9 + 6,
+                    the remainder is 6.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 18 -->
+
+        <div class="question-card">
+
+            <h2>
+                18. If n leaves remainder 4 when divided by 9,
+                what remainder does n + 14 leave when divided by 9?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q18')">
+                    A) 0
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q18')">
+                    B) 2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q18')">
+                    C) 4
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q18')">
+                    D) 7
+                </button>
+
+            </div>
+
+            <div class="answer" id="q18">
+
+                <strong class="result"></strong>
+
+                <p>
+                    n has remainder 4.
+                    14 has remainder 5 modulo 9.
+                    Therefore:
+                    4 + 5 = 9,
+                    which gives remainder 0.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 19 -->
+
+        <div class="question-card">
+
+            <h2>
+                19. What is the remainder when 2⁶ is divided by 9?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q19')">
+                    A) 1
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q19')">
+                    B) 2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q19')">
+                    C) 4
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q19')">
+                    D) 7
+                </button>
+
+            </div>
+
+            <div class="answer" id="q19">
+
+                <strong class="result"></strong>
+
+                <p>
+                    2⁶ = 64.
+                    64 = 9 × 7 + 1.
+                    Therefore, the remainder is 1.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 20 -->
+
+        <div class="question-card">
+
+            <h2>
+                20. A number is of the form 5k + 3.
+                What is its remainder when divided by 5?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q20')">
+                    A) 0
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q20')">
+                    B) 2
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q20')">
+                    C) 3
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q20')">
+                    D) 4
+                </button>
+
+            </div>
+
+            <div class="answer" id="q20">
+
+                <strong class="result"></strong>
+
+                <p>
+                    5k is divisible by 5.
+                    Therefore, 5k + 3 always leaves remainder 3.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 21 -->
+
+        <div class="question-card">
+
+            <h2>
+                21. If a ≡ 2 (mod 5) and b ≡ 4 (mod 5),
+                what is the remainder of ab when divided by 5?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q21')">
+                    A) 1
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q21')">
+                    B) 2
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q21')">
+                    C) 3
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q21')">
+                    D) 4
+                </button>
+
+            </div>
+
+            <div class="answer" id="q21">
+
+                <strong class="result"></strong>
+
+                <p>
+                    ab ≡ 2 × 4 = 8 (mod 5).
+                    Since 8 leaves remainder 3,
+                    the answer is 3.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 22 -->
+
+        <div class="question-card">
+
+            <h2>
+                22. What is the remainder when 7⁴ is divided by 6?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q22')">
+                    A) 1
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q22')">
+                    B) 2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q22')">
+                    C) 3
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q22')">
+                    D) 5
+                </button>
+
+            </div>
+
+            <div class="answer" id="q22">
+
+                <strong class="result"></strong>
+
+                <p>
+                    7 ≡ 1 (mod 6).
+                    Therefore:
+                    7⁴ ≡ 1⁴ = 1 (mod 6).
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 23 -->
+
+        <div class="question-card">
+
+            <h2>
+                23. If n ≡ 5 (mod 6), what is the remainder of
+                n² − n when divided by 6?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q23')">
+                    A) 0
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q23')">
+                    B) 2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q23')">
+                    C) 3
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q23')">
+                    D) 5
+                </button>
+
+            </div>
+
+            <div class="answer" id="q23">
+
+                <strong class="result"></strong>
+
+                <p>
+                    Substitute n ≡ 5:
+                    n² − n ≡ 5² − 5
+                    = 25 − 5
+                    = 20.
+                    20 leaves remainder 2 when divided by 6.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 24 -->
+
+        <div class="question-card">
+
+            <h2>
+                24. What is the smallest positive integer x such that
+                x ≡ 17 (mod 6)?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q24')">
+                    A) 5
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q24')">
+                    B) 6
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q24')">
+                    C) 11
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q24')">
+                    D) 17
+                </button>
+
+            </div>
+
+            <div class="answer" id="q24">
+
+                <strong class="result"></strong>
+
+                <p>
+                    17 divided by 6 leaves remainder 5.
+                    Therefore, the smallest positive integer
+                    congruent to 17 modulo 6 is 5.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 25 -->
+
+        <div class="question-card">
+
+            <h2>
+                25. What is the remainder when 3⁵ + 2⁵ is divided by 5?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q25')">
+                    A) 0
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q25')">
+                    B) 1
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q25')">
+                    C) 2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q25')">
+                    D) 4
+                </button>
+
+            </div>
+
+            <div class="answer" id="q25">
+
+                <strong class="result"></strong>
+
+                <p>
+                    3⁵ = 243 and 2⁵ = 32.
+                    Their sum is 275.
+                    Since 275 is divisible by 5,
+                    the remainder is 0.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+</main>
+
+
+<footer class="home-footer">
+
+    <p>
+        © 2026 Free Study Hub · Created by <strong>AHR</strong>
+    </p>
+
+</footer>
+
+
+<script>
+
+function checkAnswer(button, correct, answerId) {
+
+    const questionCard = button.closest(".question-card");
+    const buttons = questionCard.querySelectorAll(".options button");
+    const answer = document.getElementById(answerId);
+    const result = answer.querySelector(".result");
+
+    buttons.forEach(btn => {
+        btn.disabled = true;
+    });
+
+    if (correct) {
+
+        button.classList.add("correct");
+        result.textContent = "✓ Correct!";
+
+    } else {
+
+        button.classList.add("wrong");
+        result.textContent = "✗ Incorrect";
+
+        buttons.forEach(btn => {
+
+            if (btn.getAttribute("onclick").includes("true")) {
+                btn.classList.add("correct");
+            }
+
+        });
+
+    }
+
+    answer.style.display = "block";
+
+}
+
+</script>
+
+</body>
+
+</html>

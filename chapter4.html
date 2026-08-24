@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chapter 4: Exponential Expressions | Free Study Hub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="top-header">
+
+    <div class="brand">
+        <div class="brand-icon">📖</div>
+
+        <div>
+            <h1>FREE <span>STUDY</span> HUB</h1>
+            <p>TR-YÖS Preparation</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">⌂ &nbsp; Home</a>
+        <a href="math1.html" class="active">Math 1</a>
+        <a href="math2.html">Math 2</a>
+    </nav>
+
+</header>
+
+
+<main class="chapter-page">
+
+    <section class="chapter-hero">
+        <span>MATHEMATICS 1</span>
+        <h1>Chapter 4: Exponential Expressions</h1>
+        <p>Practice questions based on the chapter.</p>
+    </section>
+
+
+    <section class="questions">
+
+
+        <!-- QUESTION 1 -->
+
+        <div class="question-card">
+            <h2>1. What is the value of 2⁵?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q1')">A) 16</button>
+                <button onclick="checkAnswer(this, true, 'q1')">B) 32</button>
+                <button onclick="checkAnswer(this, false, 'q1')">C) 64</button>
+                <button onclick="checkAnswer(this, false, 'q1')">D) 25</button>
+            </div>
+
+            <div class="answer" id="q1">
+                <strong class="result"></strong>
+                <p>
+                    2⁵ = 2 × 2 × 2 × 2 × 2 = 32.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 2 -->
+
+        <div class="question-card">
+            <h2>2. Simplify: 3⁴ × 3²</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q2')">A) 3⁵</button>
+                <button onclick="checkAnswer(this, true, 'q2')">B) 3⁶</button>
+                <button onclick="checkAnswer(this, false, 'q2')">C) 3⁷</button>
+                <button onclick="checkAnswer(this, false, 'q2')">D) 6³</button>
+            </div>
+
+            <div class="answer" id="q2">
+                <strong class="result"></strong>
+                <p>
+                    When multiplying powers with the same base, add the exponents:
+                    3⁴ × 3² = 3⁴⁺² = 3⁶.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 3 -->
+
+        <div class="question-card">
+            <h2>3. Simplify: 7⁸ ÷ 7³</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q3')">A) 7²</button>
+                <button onclick="checkAnswer(this, false, 'q3')">B) 7⁴</button>
+                <button onclick="checkAnswer(this, true, 'q3')">C) 7⁵</button>
+                <button onclick="checkAnswer(this, false, 'q3')">D) 7¹¹</button>
+            </div>
+
+            <div class="answer" id="q3">
+                <strong class="result"></strong>
+                <p>
+                    When dividing powers with the same base, subtract the exponents:
+                    7⁸ ÷ 7³ = 7⁸⁻³ = 7⁵.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 4 -->
+
+        <div class="question-card">
+            <h2>4. What is the value of 5⁰ + 2³?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q4')">A) 8</button>
+                <button onclick="checkAnswer(this, true, 'q4')">B) 9</button>
+                <button onclick="checkAnswer(this, false, 'q4')">C) 10</button>
+                <button onclick="checkAnswer(this, false, 'q4')">D) 13</button>
+            </div>
+
+            <div class="answer" id="q4">
+                <strong class="result"></strong>
+                <p>
+                    Any nonzero number raised to the zero power equals 1.
+                    Therefore, 5⁰ + 2³ = 1 + 8 = 9.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 5 -->
+
+        <div class="question-card">
+            <h2>5. Simplify: (2³)⁴</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q5')">A) 2⁷</button>
+                <button onclick="checkAnswer(this, false, 'q5')">B) 2⁸</button>
+                <button onclick="checkAnswer(this, true, 'q5')">C) 2¹²</button>
+                <button onclick="checkAnswer(this, false, 'q5')">D) 2¹⁶</button>
+            </div>
+
+            <div class="answer" id="q5">
+                <strong class="result"></strong>
+                <p>
+                    When a power is raised to another power, multiply the exponents:
+                    (2³)⁴ = 2³×⁴ = 2¹².
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 6 -->
+
+        <div class="question-card">
+            <h2>6. Simplify: 4³ × 4⁻¹</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q6')">A) 4⁻⁴</button>
+                <button onclick="checkAnswer(this, true, 'q6')">B) 4²</button>
+                <button onclick="checkAnswer(this, false, 'q6')">C) 4³</button>
+                <button onclick="checkAnswer(this, false, 'q6')">D) 4⁴</button>
+            </div>
+
+            <div class="answer" id="q6">
+                <strong class="result"></strong>
+                <p>
+                    Add the exponents because the bases are the same:
+                    4³ × 4⁻¹ = 4³⁻¹ = 4².
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 7 -->
+
+        <div class="question-card">
+            <h2>7. Which fraction is equal to 2⁻³?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q7')">A) 8</button>
+                <button onclick="checkAnswer(this, true, 'q7')">B) 1/8</button>
+                <button onclick="checkAnswer(this, false, 'q7')">C) -8</button>
+                <button onclick="checkAnswer(this, false, 'q7')">D) -1/8</button>
+            </div>
+
+            <div class="answer" id="q7">
+                <strong class="result"></strong>
+                <p>
+                    A negative exponent means the reciprocal:
+                    2⁻³ = 1/2³ = 1/8.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 8 -->
+
+        <div class="question-card">
+            <h2>8. Simplify: (3² × 3⁵) ÷ 3⁴</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q8')">A) 3²</button>
+                <button onclick="checkAnswer(this, true, 'q8')">B) 3³</button>
+                <button onclick="checkAnswer(this, false, 'q8')">C) 3⁴</button>
+                <button onclick="checkAnswer(this, false, 'q8')">D) 3⁷</button>
+            </div>
+
+            <div class="answer" id="q8">
+                <strong class="result"></strong>
+                <p>
+                    First add the exponents when multiplying:
+                    3² × 3⁵ = 3⁷.
+                    Then subtract 4:
+                    3⁷ ÷ 3⁴ = 3³.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 9 -->
+
+        <div class="question-card">
+            <h2>9. Which is greater?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q9')">A) 2⁶</button>
+                <button onclick="checkAnswer(this, true, 'q9')">B) 3⁴</button>
+                <button onclick="checkAnswer(this, false, 'q9')">C) They are equal</button>
+                <button onclick="checkAnswer(this, false, 'q9')">D) Cannot be determined</button>
+            </div>
+
+            <div class="answer" id="q9">
+                <strong class="result"></strong>
+                <p>
+                    2⁶ = 64, while 3⁴ = 81. Therefore, 3⁴ is greater.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 10 -->
+
+        <div class="question-card">
+            <h2>10. If 2ˣ = 32, what is x?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q10')">A) 3</button>
+                <button onclick="checkAnswer(this, false, 'q10')">B) 4</button>
+                <button onclick="checkAnswer(this, true, 'q10')">C) 5</button>
+                <button onclick="checkAnswer(this, false, 'q10')">D) 6</button>
+            </div>
+
+            <div class="answer" id="q10">
+                <strong class="result"></strong>
+                <p>
+                    Since 32 = 2⁵, we have 2ˣ = 2⁵.
+                    Therefore, x = 5.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 11 -->
+
+        <div class="question-card">
+            <h2>11. If 3ˣ = 81 and 2ʸ = 16, what is x + y?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q11')">A) 6</button>
+                <button onclick="checkAnswer(this, true, 'q11')">B) 9</button>
+                <button onclick="checkAnswer(this, false, 'q11')">C) 10</button>
+                <button onclick="checkAnswer(this, false, 'q11')">D) 12</button>
+            </div>
+
+            <div class="answer" id="q11">
+                <strong class="result"></strong>
+                <p>
+                    81 = 3⁴, so x = 4.
+                    Also, 16 = 2⁴, so y = 4.
+                    Therefore, x + y = 8.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 12 -->
+
+        <div class="question-card">
+            <h2>12. If (x³)² = x⁶, which exponent rule is being used?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q12')">A) Add the exponents</button>
+                <button onclick="checkAnswer(this, true, 'q12')">B) Multiply the exponents</button>
+                <button onclick="checkAnswer(this, false, 'q12')">C) Subtract the exponents</button>
+                <button onclick="checkAnswer(this, false, 'q12')">D) Divide the exponents</button>
+            </div>
+
+            <div class="answer" id="q12">
+                <strong class="result"></strong>
+                <p>
+                    When a power is raised to another power, the exponents are multiplied:
+                    (x³)² = x³×² = x⁶.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 13 -->
+
+        <div class="question-card">
+            <h2>13. Simplify: x⁷ ÷ x²</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q13')">A) x³</button>
+                <button onclick="checkAnswer(this, false, 'q13')">B) x⁴</button>
+                <button onclick="checkAnswer(this, true, 'q13')">C) x⁵</button>
+                <button onclick="checkAnswer(this, false, 'q13')">D) x⁹</button>
+            </div>
+
+            <div class="answer" id="q13">
+                <strong class="result"></strong>
+                <p>
+                    For division with the same base, subtract the exponents:
+                    x⁷ ÷ x² = x⁷⁻² = x⁵.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 14 -->
+
+        <div class="question-card">
+            <h2>14. Simplify: (2x²)³</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q14')">A) 6x⁵</button>
+                <button onclick="checkAnswer(this, true, 'q14')">B) 8x⁶</button>
+                <button onclick="checkAnswer(this, false, 'q14')">C) 8x⁵</button>
+                <button onclick="checkAnswer(this, false, 'q14')">D) 6x⁶</button>
+            </div>
+
+            <div class="answer" id="q14">
+                <strong class="result"></strong>
+                <p>
+                    Raise both the coefficient and x to the third power:
+                    (2x²)³ = 2³ × (x²)³ = 8x⁶.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 15 -->
+
+        <div class="question-card">
+            <h2>15. What is the value of (-2)⁴ − (-2)³?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q15')">A) 8</button>
+                <button onclick="checkAnswer(this, true, 'q15')">B) 24</button>
+                <button onclick="checkAnswer(this, false, 'q15')">C) 16</button>
+                <button onclick="checkAnswer(this, false, 'q15')">D) -24</button>
+            </div>
+
+            <div class="answer" id="q15">
+                <strong class="result"></strong>
+                <p>
+                    (-2)⁴ = 16 and (-2)³ = -8.
+                    Therefore, 16 − (-8) = 24.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 16 -->
+
+        <div class="question-card">
+            <h2>16. If 2ˣ × 2³ = 2⁹, what is x?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q16')">A) 4</button>
+                <button onclick="checkAnswer(this, false, 'q16')">B) 5</button>
+                <button onclick="checkAnswer(this, true, 'q16')">C) 6</button>
+                <button onclick="checkAnswer(this, false, 'q16')">D) 7</button>
+            </div>
+
+            <div class="answer" id="q16">
+                <strong class="result"></strong>
+                <p>
+                    Add the exponents:
+                    2ˣ × 2³ = 2ˣ⁺³.
+                    Therefore, x + 3 = 9, so x = 6.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 17 -->
+
+        <div class="question-card">
+            <h2>17. If 5ˣ ÷ 5² = 125, what is x?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q17')">A) 3</button>
+                <button onclick="checkAnswer(this, false, 'q17')">B) 4</button>
+                <button onclick="checkAnswer(this, true, 'q17')">C) 5</button>
+                <button onclick="checkAnswer(this, false, 'q17')">D) 6</button>
+            </div>
+
+            <div class="answer" id="q17">
+                <strong class="result"></strong>
+                <p>
+                    125 = 5³.
+                    Therefore, 5ˣ⁻² = 5³, so x − 2 = 3.
+                    Hence, x = 5.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 18 -->
+
+        <div class="question-card">
+            <h2>18. Simplify: (a³b²)(a²b⁴)</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q18')">A) a⁴b⁵</button>
+                <button onclick="checkAnswer(this, true, 'q18')">B) a⁵b⁶</button>
+                <button onclick="checkAnswer(this, false, 'q18')">C) a⁶b⁵</button>
+                <button onclick="checkAnswer(this, false, 'q18')">D) a⁶b⁶</button>
+            </div>
+
+            <div class="answer" id="q18">
+                <strong class="result"></strong>
+                <p>
+                    Add exponents of the same variables:
+                    a³ × a² = a⁵ and b² × b⁴ = b⁶.
+                    Therefore, the result is a⁵b⁶.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 19 -->
+
+        <div class="question-card">
+            <h2>19. If 4ˣ = 2⁶, what is x?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q19')">A) 2</button>
+                <button onclick="checkAnswer(this, true, 'q19')">B) 3</button>
+                <button onclick="checkAnswer(this, false, 'q19')">C) 4</button>
+                <button onclick="checkAnswer(this, false, 'q19')">D) 6</button>
+            </div>
+
+            <div class="answer" id="q19">
+                <strong class="result"></strong>
+                <p>
+                    Since 4 = 2², we have:
+                    4ˣ = (2²)ˣ = 2²ˣ.
+                    Therefore, 2x = 6 and x = 3.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 20 -->
+
+        <div class="question-card">
+            <h2>20. Which expression is equal to 1/2⁵?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q20')">A) 2⁵</button>
+                <button onclick="checkAnswer(this, true, 'q20')">B) 2⁻⁵</button>
+                <button onclick="checkAnswer(this, false, 'q20')">C) -2⁵</button>
+                <button onclick="checkAnswer(this, false, 'q20')">D) 2⁻⁴</button>
+            </div>
+
+            <div class="answer" id="q20">
+                <strong class="result"></strong>
+                <p>
+                    By the negative exponent rule,
+                    1/2⁵ = 2⁻⁵.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 21 -->
+
+        <div class="question-card">
+            <h2>21. If x = 2³ and y = 2², what is x²/y?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q21')">A) 8</button>
+                <button onclick="checkAnswer(this, true, 'q21')">B) 16</button>
+                <button onclick="checkAnswer(this, false, 'q21')">C) 32</button>
+                <button onclick="checkAnswer(this, false, 'q21')">D) 64</button>
+            </div>
+
+            <div class="answer" id="q21">
+                <strong class="result"></strong>
+                <p>
+                    x² = (2³)² = 2⁶.
+                    Since y = 2²,
+                    x²/y = 2⁶ ÷ 2² = 2⁴ = 16.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 22 -->
+
+        <div class="question-card">
+            <h2>22. Simplify: (x⁴y³)/(x²y)</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q22')">A) x²y</button>
+                <button onclick="checkAnswer(this, true, 'q22')">B) x²y²</button>
+                <button onclick="checkAnswer(this, false, 'q22')">C) x⁶y⁴</button>
+                <button onclick="checkAnswer(this, false, 'q22')">D) x²y³</button>
+            </div>
+
+            <div class="answer" id="q22">
+                <strong class="result"></strong>
+                <p>
+                    Subtract the exponents of matching variables:
+                    x⁴ ÷ x² = x² and y³ ÷ y = y².
+                    Therefore, the result is x²y².
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 23 -->
+
+        <div class="question-card">
+            <h2>23. If 9ˣ = 27, what is x?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q23')">A) 1</button>
+                <button onclick="checkAnswer(this, true, 'q23')">B) 3/2</button>
+                <button onclick="checkAnswer(this, false, 'q23')">C) 2</button>
+                <button onclick="checkAnswer(this, false, 'q23')">D) 3</button>
+            </div>
+
+            <div class="answer" id="q23">
+                <strong class="result"></strong>
+                <p>
+                    Rewrite both numbers using base 3:
+                    9 = 3² and 27 = 3³.
+                    Thus, (3²)ˣ = 3³, so 2x = 3.
+                    Therefore, x = 3/2.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 24 -->
+
+        <div class="question-card">
+            <h2>24. If 2ᵃ = 8 and 2ᵇ = 32, what is a + b?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q24')">A) 6</button>
+                <button onclick="checkAnswer(this, false, 'q24')">B) 7</button>
+                <button onclick="checkAnswer(this, true, 'q24')">C) 8</button>
+                <button onclick="checkAnswer(this, false, 'q24')">D) 9</button>
+            </div>
+
+            <div class="answer" id="q24">
+                <strong class="result"></strong>
+                <p>
+                    8 = 2³, so a = 3.
+                    32 = 2⁵, so b = 5.
+                    Therefore, a + b = 3 + 5 = 8.
+                </p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 25 -->
+
+        <div class="question-card">
+            <h2>25. If 2ˣ + 2ˣ = 64, what is x?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q25')">A) 4</button>
+                <button onclick="checkAnswer(this, true, 'q25')">B) 5</button>
+                <button onclick="checkAnswer(this, false, 'q25')">C) 6</button>
+                <button onclick="checkAnswer(this, false, 'q25')">D) 7</button>
+            </div>
+
+            <div class="answer" id="q25">
+                <strong class="result"></strong>
+                <p>
+                    2ˣ + 2ˣ = 2 × 2ˣ = 2ˣ⁺¹.
+                    Therefore, 2ˣ⁺¹ = 64 = 2⁶.
+                    So x + 1 = 6, giving x = 5.
+                </p>
+            </div>
+        </div>
+
+
+    </section>
+
+</main>
+
+
+<footer class="home-footer">
+    <p>© 2026 Free Study Hub · Created by <strong>AHR</strong></p>
+</footer>
+
+
+<script>
+
+function checkAnswer(button, correct, answerId) {
+
+    const questionCard = button.closest(".question-card");
+    const buttons = questionCard.querySelectorAll(".options button");
+    const answer = document.getElementById(answerId);
+    const result = answer.querySelector(".result");
+
+    buttons.forEach(btn => {
+        btn.disabled = true;
+    });
+
+    if (correct) {
+
+        button.classList.add("correct");
+        result.textContent = "✓ Correct!";
+
+    } else {
+
+        button.classList.add("wrong");
+        result.textContent = "✗ Incorrect";
+
+        buttons.forEach(btn => {
+
+            if (btn.getAttribute("onclick").includes("true")) {
+                btn.classList.add("correct");
+            }
+
+        });
+    }
+
+    answer.style.display = "block";
+}
+
+</script>
+
+</body>
+</html>

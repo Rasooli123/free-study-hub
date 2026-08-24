@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FREE STUDY HUB | TR-YÖS Preparation</title>
+
+    <meta
+        name="description"
+        content="Free TR-YÖS preparation resources with Mathematics, IQ, Geometry, books and practice tests. Created by AHR."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Apply saved theme before page renders -->
+    <script>
+        (function () {
+            try {
+                const savedTheme =
+                    localStorage.getItem("freeStudyHubTheme");
+
+                document.documentElement.classList.add(
+                    savedTheme === "dark"
+                        ? "theme-dark"
+                        : "theme-light"
+                );
+            } catch (error) {
+                document.documentElement.classList.add("theme-light");
+            }
+        })();
+    </script>
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="top-header">
+
+        <div class="brand">
+
+            <span class="brand-icon" aria-hidden="true">📖</span>
+
+            <div>
+                <h1>FREE STUDY HUB</h1>
+                <p>TR-YÖS Preparation</p>
+            </div>
+
+        </div>
+
+        <nav aria-label="Main navigation">
+
+            <a href="index.html" class="active">
+                Home
+            </a>
+
+            <a href="math1.html">
+                Math 1
+            </a>
+
+            <a href="math2.html">
+                Math 2
+            </a>
+
+            <a href="iq.html">
+                IQ
+            </a>
+
+            <a href="geometry.html">
+                Geometry
+            </a>
+
+            <a href="books.html">
+                Books &amp; Tests
+            </a>
+
+            <button
+                class="theme-toggle"
+                id="themeToggle"
+                type="button"
+                aria-label="Switch to dark mode"
+                title="Switch to dark mode"
+                aria-pressed="false"
+            >
+                <span id="themeIcon" aria-hidden="true">🌙</span>
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+        <!-- ================= HOME HERO ================= -->
+
+        <section class="home-hero">
+
+            <div class="hero-content">
+
+                <span class="hero-badge">
+                    TR-YÖS PREPARATION
+                </span>
+
+                <h2>
+                    Study smarter.<br>
+                    <span>Prepare better.</span>
+                </h2>
+
+                <p class="hero-description">
+                    A completely free study hub built to help students
+                    prepare for the TR-YÖS exam with focused practice,
+                    clear explanations and useful study resources.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="math1.html"
+                        class="primary-button"
+                    >
+                        Start Studying →
+                    </a>
+
+                    <a
+                        href="#subjects"
+                        class="secondary-button"
+                    >
+                        Explore Subjects
+                    </a>
+
+                </div>
+
+                <div class="hero-trust">
+
+                    <span>✓ Completely Free</span>
+                    <span>✓ TR-YÖS Focused</span>
+                    <span>✓ Practice &amp; Explanations</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- HERO VISUAL -->
+
+            <div class="hero-visual">
+
+                <div
+                    class="hero-glow"
+                    aria-hidden="true"
+                ></div>
+
+                <div class="main-study-card">
+
+                    <div class="study-card-top">
+
+                        <div
+                            class="study-icon"
+                            aria-hidden="true"
+                        >
+                            📚
+                        </div>
+
+                        <span class="study-label">
+                            STUDY HUB
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Your preparation<br>
+                        starts here.
+                    </h3>
+
+                    <div class="mini-progress">
+
+                        <div
+                            class="mini-progress-fill"
+                            aria-hidden="true"
+                        ></div>
+
+                    </div>
+
+                    <div class="study-card-bottom">
+
+                        <span>
+                            Preparation progress
+                        </span>
+
+                        <strong>
+                            72%
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FLOATING CARD 1 -->
+
+                <div class="floating-card floating-card-one">
+
+                    <span aria-hidden="true">
+                        ✓
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Practice
+                        </strong>
+
+                        <small>
+                            Question by question
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FLOATING CARD 2 -->
+
+                <div class="floating-card floating-card-two">
+
+                    <span aria-hidden="true">
+                        ∞
+                    </span>
+
+                    <div>
+
+                        <strong>
+                            Free
+                        </strong>
+
+                        <small>
+                            Unlimited practice
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= STATS ================= -->
+
+        <section class="stats-section">
+
+            <div class="stat">
+                <strong>2</strong>
+                <span>Math Books</span>
+            </div>
+
+            <div class="stat-divider" aria-hidden="true"></div>
+
+            <div class="stat">
+                <strong>31</strong>
+                <span>Math Chapters</span>
+            </div>
+
+            <div class="stat-divider" aria-hidden="true"></div>
+
+            <div class="stat">
+                <strong>100%</strong>
+                <span>Free</span>
+            </div>
+
+            <div class="stat-divider" aria-hidden="true"></div>
+
+            <div class="stat">
+                <strong>∞</strong>
+                <span>Practice</span>
+            </div>
+
+        </section>
+
+
+        <!-- ================= SUBJECTS ================= -->
+
+        <section
+            class="home-section"
+            id="subjects"
+        >
+
+            <div class="section-heading">
+
+                <span class="section-kicker">
+                    EXPLORE
+                </span>
+
+                <h2>
+                    Your preparation starts here.
+                </h2>
+
+                <p>
+                    Choose a subject and start practicing at your own pace.
+                </p>
+
+            </div>
+
+
+            <div class="subject-grid">
+
+                <a
+                    href="math1.html"
+                    class="subject-card"
+                >
+
+                    <div class="subject-card-top">
+
+                        <div class="subject-icon">
+                            01
+                        </div>
+
+                        <span
+                            class="subject-arrow"
+                            aria-hidden="true"
+                        >
+                            →
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Math 1
+                    </h3>
+
+                    <p>
+                        Core mathematical concepts and
+                        TR-YÖS-style practice questions.
+                    </p>
+
+                    <div class="subject-footer">
+
+                        <span>
+                            16 Chapters
+                        </span>
+
+                        <span>
+                            Explore →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="math2.html"
+                    class="subject-card"
+                >
+
+                    <div class="subject-card-top">
+
+                        <div class="subject-icon">
+                            02
+                        </div>
+
+                        <span
+                            class="subject-arrow"
+                            aria-hidden="true"
+                        >
+                            →
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Math 2
+                    </h3>
+
+                    <p>
+                        Advanced mathematics covering
+                        important TR-YÖS topics.
+                    </p>
+
+                    <div class="subject-footer">
+
+                        <span>
+                            15 Chapters
+                        </span>
+
+                        <span>
+                            Explore →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="iq.html"
+                    class="subject-card"
+                >
+
+                    <div class="subject-card-top">
+
+                        <div class="subject-icon">
+                            03
+                        </div>
+
+                        <span
+                            class="subject-arrow"
+                            aria-hidden="true"
+                        >
+                            →
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        IQ
+                    </h3>
+
+                    <p>
+                        IQ books and reasoning resources
+                        for TR-YÖS preparation.
+                    </p>
+
+                    <div class="subject-footer">
+
+                        <span>
+                            Study Resources
+                        </span>
+
+                        <span>
+                            Explore →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="geometry.html"
+                    class="subject-card"
+                >
+
+                    <div class="subject-card-top">
+
+                        <div class="subject-icon">
+                            04
+                        </div>
+
+                        <span
+                            class="subject-arrow"
+                            aria-hidden="true"
+                        >
+                            →
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Geometry
+                    </h3>
+
+                    <p>
+                        Geometry books and preparation
+                        resources for TR-YÖS.
+                    </p>
+
+                    <div class="subject-footer">
+
+                        <span>
+                            Study Resources
+                        </span>
+
+                        <span>
+                            Explore →
+                        </span>
+
+                    </div>
+
+                </a>
+
+
+                <a
+                    href="books.html"
+                    class="subject-card"
+                >
+
+                    <div class="subject-card-top">
+
+                        <div class="subject-icon">
+                            05
+                        </div>
+
+                        <span
+                            class="subject-arrow"
+                            aria-hidden="true"
+                        >
+                            →
+                        </span>
+
+                    </div>
+
+                    <h3>
+                        Books &amp; Tests
+                    </h3>
+
+                    <p>
+                        Important TR-YÖS books, trial exams,
+                        question banks and study resources.
+                    </p>
+
+                    <div class="subject-footer">
+
+                        <span>
+                            Study Resources
+                        </span>
+
+                        <span>
+                            Explore →
+                        </span>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= WHY ================= -->
+
+        <section class="why-section">
+
+            <div class="why-content">
+
+                <span class="section-kicker">
+                    WHY FREE STUDY HUB?
+                </span>
+
+                <h2>
+                    Built for focused preparation.
+                </h2>
+
+                <p>
+                    Everything is organized to make your preparation
+                    simple, focused and accessible without unnecessary
+                    distractions.
+                </p>
+
+            </div>
+
+
+            <div class="benefits-grid">
+
+                <div class="benefit">
+
+                    <div class="benefit-number">
+                        01
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Completely Free
+                        </h3>
+
+                        <p>
+                            Study without subscriptions,
+                            paywalls or unnecessary restrictions.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="benefit">
+
+                    <div class="benefit-number">
+                        02
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Practice Focused
+                        </h3>
+
+                        <p>
+                            Work through questions and immediately
+                            check your answers and explanations.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="benefit">
+
+                    <div class="benefit-number">
+                        03
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            TR-YÖS Focused
+                        </h3>
+
+                        <p>
+                            Practice material is organized around
+                            the subjects needed for your preparation.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="benefit">
+
+                    <div class="benefit-number">
+                        04
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            Learn From Mistakes
+                        </h3>
+
+                        <p>
+                            Every practice question can help you
+                            understand the method behind the answer.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HOW IT WORKS ================= -->
+
+        <section class="home-section">
+
+            <div class="section-heading">
+
+                <span class="section-kicker">
+                    HOW IT WORKS
+                </span>
+
+                <h2>
+                    Simple. Focused. Effective.
+                </h2>
+
+                <p>
+                    A straightforward way to turn practice
+                    into real preparation.
+                </p>
+
+            </div>
+
+
+            <div class="steps-grid">
+
+                <div class="step">
+
+                    <div class="step-number">
+                        01
+                    </div>
+
+                    <h3>
+                        Choose a subject
+                    </h3>
+
+                    <p>
+                        Select Mathematics, IQ, Geometry
+                        or another available resource.
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="step-line"
+                    aria-hidden="true"
+                ></div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        02
+                    </div>
+
+                    <h3>
+                        Practice
+                    </h3>
+
+                    <p>
+                        Solve the questions yourself before
+                        checking the answer.
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="step-line"
+                    aria-hidden="true"
+                ></div>
+
+
+                <div class="step">
+
+                    <div class="step-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Learn from mistakes
+                    </h3>
+
+                    <p>
+                        Review the explanation and understand
+                        why the correct answer is correct.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FINAL CTA ================= -->
+
+        <section class="final-cta">
+
+            <div>
+
+                <span class="section-kicker">
+                    READY?
+                </span>
+
+                <h2>
+                    Your TR-YÖS preparation starts now.
+                </h2>
+
+                <p>
+                    Choose your subject and start practicing.
+                </p>
+
+            </div>
+
+
+            <a
+                href="math1.html"
+                class="cta-button"
+            >
+                Start Studying →
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="home-footer">
+
+        <div class="footer-brand">
+
+            <strong>
+                FREE STUDY HUB
+            </strong>
+
+            <p>
+                Free TR-YÖS preparation resources.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <a href="index.html">Home</a>
+            <a href="math1.html">Math 1</a>
+            <a href="math2.html">Math 2</a>
+            <a href="iq.html">IQ</a>
+            <a href="geometry.html">Geometry</a>
+            <a href="books.html">Books &amp; Tests</a>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 Free Study Hub
+            </span>
+
+            <span>
+                Created by <strong>AHR</strong>
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ONE THEME SYSTEM ONLY -->
+
+    <script src="theme.js"></script>
+
+</body>
+</html>

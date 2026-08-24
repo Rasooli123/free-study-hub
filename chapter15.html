@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chapter 15 - Logic | Free Study Hub</title>
+
+    <meta
+        name="description"
+        content="TR-YÖS Mathematics 1 Chapter 15: Logic. Practice 25 questions with explanations."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="top-header">
+
+    <div class="brand">
+
+        <div class="brand-icon">
+            📖
+        </div>
+
+        <div>
+            <h1>
+                FREE <span>STUDY</span> HUB
+            </h1>
+
+            <p>
+                TR-YÖS Preparation
+            </p>
+        </div>
+
+    </div>
+
+    <nav>
+
+        <a href="index.html">
+            ⌂ &nbsp; Home
+        </a>
+
+        <a href="math1.html" class="active">
+            Math 1
+        </a>
+
+        <a href="math2.html">
+            Math 2
+        </a>
+
+        <a href="iq.html">
+            IQ
+        </a>
+
+        <a href="geometry.html">
+            Geometry
+        </a>
+
+        <a href="books.html">
+            📚 Books
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="chapter-page">
+
+    <section class="chapter-hero">
+
+        <p>
+            MATHEMATICS 1
+        </p>
+
+        <h1>
+            Logic
+        </h1>
+
+        <span>
+            Chapter 15 · 25 Questions
+        </span>
+
+    </section>
+
+
+    <section class="questions">
+
+
+        <!-- QUESTION 1 -->
+
+        <div class="question-card">
+
+            <h2>
+                1. Which of the following is a proposition?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q1')">
+                    A) Close the door.
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q1')">
+                    B) 7 is a prime number.
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q1')">
+                    C) What time is it?
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q1')">
+                    D) Study harder!
+                </button>
+
+            </div>
+
+            <div class="answer" id="q1">
+
+                <strong class="result"></strong>
+
+                <p>
+                    A proposition is a statement that can be classified as
+                    either true or false. "7 is a prime number" has a definite
+                    truth value, so it is a proposition.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 2 -->
+
+        <div class="question-card">
+
+            <h2>
+                2. What is the truth value of the statement:
+                "12 is an odd number"?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q2')">
+                    A) True
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q2')">
+                    B) False
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q2')">
+                    C) Both true and false
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q2')">
+                    D) Cannot be determined
+                </button>
+
+            </div>
+
+            <div class="answer" id="q2">
+
+                <strong class="result"></strong>
+
+                <p>
+                    12 is divisible by 2, so it is even.
+                    Therefore, the statement is false.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 3 -->
+
+        <div class="question-card">
+
+            <h2>
+                3. If p is true, what is the truth value of NOT p?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q3')">
+                    A) True
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q3')">
+                    B) False
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q3')">
+                    C) Both
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q3')">
+                    D) Cannot be determined
+                </button>
+
+            </div>
+
+            <div class="answer" id="q3">
+
+                <strong class="result"></strong>
+
+                <p>
+                    The negation of a true proposition is false.
+                    Therefore, NOT p is false.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 4 -->
+
+        <div class="question-card">
+
+            <h2>
+                4. If p is false and q is true, what is the truth value of
+                p AND q?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q4')">
+                    A) False
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q4')">
+                    B) True
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q4')">
+                    C) Both
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q4')">
+                    D) Cannot be determined
+                </button>
+
+            </div>
+
+            <div class="answer" id="q4">
+
+                <strong class="result"></strong>
+
+                <p>
+                    An AND statement is true only when both statements are true.
+                    Since p is false, p AND q is false.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 5 -->
+
+        <div class="question-card">
+
+            <h2>
+                5. If p is false and q is true, what is the truth value of
+                p OR q?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q5')">
+                    A) True
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q5')">
+                    B) False
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q5')">
+                    C) Both
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q5')">
+                    D) Cannot be determined
+                </button>
+
+            </div>
+
+            <div class="answer" id="q5">
+
+                <strong class="result"></strong>
+
+                <p>
+                    An OR statement is true when at least one of its
+                    statements is true. Since q is true, p OR q is true.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 6 -->
+
+        <div class="question-card">
+
+            <h2>
+                6. Which of the following is the negation of:
+                "x is greater than 5"?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q6')">
+                    A) x &gt; 5
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q6')">
+                    B) x ≤ 5
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q6')">
+                    C) x ≥ 5
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q6')">
+                    D) x &lt; 5
+                </button>
+
+            </div>
+
+            <div class="answer" id="q6">
+
+                <strong class="result"></strong>
+
+                <p>
+                    The negation of x &gt; 5 is x ≤ 5.
+                    This includes both x = 5 and values below 5.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 7 -->
+
+        <div class="question-card">
+
+            <h2>
+                7. If p is true and q is false, what is the truth value of
+                p AND NOT q?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q7')">
+                    A) True
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q7')">
+                    B) False
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q7')">
+                    C) Both
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q7')">
+                    D) Cannot be determined
+                </button>
+
+            </div>
+
+            <div class="answer" id="q7">
+
+                <strong class="result"></strong>
+
+                <p>
+                    q is false, so NOT q is true.
+                    Therefore:
+                    true AND true = true.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 8 -->
+
+        <div class="question-card">
+
+            <h2>
+                8. The statement "If p, then q" is false in which case?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q8')">
+                    A) p is false, q is false
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q8')">
+                    B) p is false, q is true
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q8')">
+                    C) p is true, q is false
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q8')">
+                    D) p is true, q is true
+                </button>
+
+            </div>
+
+            <div class="answer" id="q8">
+
+                <strong class="result"></strong>
+
+                <p>
+                    An implication "If p, then q" is false only when
+                    p is true but q is false.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 9 -->
+
+        <div class="question-card">
+
+            <h2>
+                9. What is the converse of:
+                "If a number is divisible by 4, then it is even"?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q9')">
+                    A) If a number is even, then it is divisible by 4.
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q9')">
+                    B) If a number is even, then it is divisible by 4.
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q9')">
+                    C) If a number is not even, then it is divisible by 4.
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q9')">
+                    D) If a number is divisible by 4, then it is not even.
+                </button>
+
+            </div>
+
+            <div class="answer" id="q9">
+
+                <strong class="result"></strong>
+
+                <p>
+                    The converse is formed by switching the hypothesis
+                    and conclusion:
+                    "If a number is even, then it is divisible by 4."
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 10 -->
+
+        <div class="question-card">
+
+            <h2>
+                10. Which statement is always true?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q10')">
+                    A) A number divisible by 10 is divisible by 5.
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q10')">
+                    B) Every odd number is prime.
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q10')">
+                    C) Every even number is divisible by 4.
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q10')">
+                    D) Every prime number is odd.
+                </button>
+
+            </div>
+
+            <div class="answer" id="q10">
+
+                <strong class="result"></strong>
+
+                <p>
+                    Every multiple of 10 is also a multiple of 5.
+                    The other statements are not always true.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 11 -->
+
+        <div class="question-card">
+
+            <h2>
+                11. If p is true and q is true, what is the truth value of
+                p OR q?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q11')">
+                    A) True
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q11')">
+                    B) False
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q11')">
+                    C) Both
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q11')">
+                    D) Cannot be determined
+                </button>
+
+            </div>
+
+            <div class="answer" id="q11">
+
+                <strong class="result"></strong>
+
+                <p>
+                    Since both p and q are true, their OR statement is true.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 12 -->
+
+        <div class="question-card">
+
+            <h2>
+                12. If p is false and q is false, what is the truth value of
+                p OR q?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q12')">
+                    A) True
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q12')">
+                    B) False
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q12')">
+                    C) Both
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q12')">
+                    D) Cannot be determined
+                </button>
+
+            </div>
+
+            <div class="answer" id="q12">
+
+                <strong class="result"></strong>
+
+                <p>
+                    An OR statement is false only when both statements
+                    are false.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 13 -->
+
+        <div class="question-card">
+
+            <h2>
+                13. If p is true and q is false, what is the truth value of
+                p AND q?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q13')">
+                    A) True
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q13')">
+                    B) False
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q13')">
+                    C) Both
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q13')">
+                    D) Cannot be determined
+                </button>
+
+            </div>
+
+            <div class="answer" id="q13">
+
+                <strong class="result"></strong>
+
+                <p>
+                    An AND statement requires both statements to be true.
+                    Since q is false, p AND q is false.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 14 -->
+
+        <div class="question-card">
+
+            <h2>
+                14. Which expression is equivalent to NOT (p AND q)?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q14')">
+                    A) NOT p AND NOT q
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q14')">
+                    B) NOT p OR NOT q
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q14')">
+                    C) p OR q
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q14')">
+                    D) p AND q
+                </button>
+
+            </div>
+
+            <div class="answer" id="q14">
+
+                <strong class="result"></strong>
+
+                <p>
+                    By De Morgan's law:
+                    NOT (p AND q) = NOT p OR NOT q.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 15 -->
+
+        <div class="question-card">
+
+            <h2>
+                15. Which expression is equivalent to NOT (p OR q)?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q15')">
+                    A) NOT p OR NOT q
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q15')">
+                    B) NOT p AND NOT q
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q15')">
+                    C) p AND q
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q15')">
+                    D) p OR q
+                </button>
+
+            </div>
+
+            <div class="answer" id="q15">
+
+                <strong class="result"></strong>
+
+                <p>
+                    By De Morgan's law:
+                    NOT (p OR q) = NOT p AND NOT q.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 16 -->
+
+        <div class="question-card">
+
+            <h2>
+                16. Which of the following is a tautology?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q16')">
+                    A) p OR NOT p
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q16')">
+                    B) p AND NOT p
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q16')">
+                    C) p AND q
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q16')">
+                    D) NOT p
+                </button>
+
+            </div>
+
+            <div class="answer" id="q16">
+
+                <strong class="result"></strong>
+
+                <p>
+                    A tautology is always true.
+                    Either p is true or p is false, so one of
+                    p or NOT p must always be true.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 17 -->
+
+        <div class="question-card">
+
+            <h2>
+                17. Which of the following is a contradiction?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q17')">
+                    A) p OR NOT p
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q17')">
+                    B) p AND NOT p
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q17')">
+                    C) p OR q
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q17')">
+                    D) NOT p OR q
+                </button>
+
+            </div>
+
+            <div class="answer" id="q17">
+
+                <strong class="result"></strong>
+
+                <p>
+                    p and NOT p cannot both be true at the same time.
+                    Therefore, p AND NOT p is always false and is
+                    a contradiction.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 18 -->
+
+        <div class="question-card">
+
+            <h2>
+                18. If "If p, then q" is true and p is true,
+                what must be true?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q18')">
+                    A) q is true
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q18')">
+                    B) q is false
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q18')">
+                    C) p is false
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q18')">
+                    D) Nothing can be determined
+                </button>
+
+            </div>
+
+            <div class="answer" id="q18">
+
+                <strong class="result"></strong>
+
+                <p>
+                    If p → q is true and p is true, q must also be true.
+                    Otherwise, the implication would be false.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 19 -->
+
+        <div class="question-card">
+
+            <h2>
+                19. Which statement is equivalent to:
+                "If x is divisible by 6, then x is even"?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q19')">
+                    A) If x is even, then x is divisible by 6.
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q19')">
+                    B) If x is not even, then x is not divisible by 6.
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q19')">
+                    C) If x is not divisible by 6, then x is not even.
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q19')">
+                    D) If x is even, then x is not divisible by 6.
+                </button>
+
+            </div>
+
+            <div class="answer" id="q19">
+
+                <strong class="result"></strong>
+
+                <p>
+                    The contrapositive of "If p, then q" is
+                    "If NOT q, then NOT p."
+                    Therefore:
+                    If x is not even, then x is not divisible by 6.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 20 -->
+
+        <div class="question-card">
+
+            <h2>
+                20. Let p mean "x &gt; 3" and q mean "x &lt; 10".
+                Which interval represents p AND q?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q20')">
+                    A) x &lt; 3
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q20')">
+                    B) 3 &lt; x &lt; 10
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q20')">
+                    C) x &gt; 10
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q20')">
+                    D) x ≤ 3 or x ≥ 10
+                </button>
+
+            </div>
+
+            <div class="answer" id="q20">
+
+                <strong class="result"></strong>
+
+                <p>
+                    AND means both conditions must hold.
+                    Therefore, x must be greater than 3
+                    and less than 10:
+                    3 &lt; x &lt; 10.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 21 -->
+
+        <div class="question-card">
+
+            <h2>
+                21. Let p mean "x &gt; 5" and q mean "x &lt; 2".
+                What is the truth value of p AND q for any real x?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q21')">
+                    A) Always true
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q21')">
+                    B) Always false
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q21')">
+                    C) True only when x = 3
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q21')">
+                    D) Cannot be determined
+                </button>
+
+            </div>
+
+            <div class="answer" id="q21">
+
+                <strong class="result"></strong>
+
+                <p>
+                    No real number can be both greater than 5
+                    and less than 2.
+                    Therefore, p AND q is always false.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 22 -->
+
+        <div class="question-card">
+
+            <h2>
+                22. Let p mean "x is even" and q mean "x is divisible by 3".
+                What does p OR q mean?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q22')">
+                    A) x is even or divisible by 3
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q22')">
+                    B) x is both even and divisible by 3
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q22')">
+                    C) x is neither even nor divisible by 3
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q22')">
+                    D) x must be divisible by 6
+                </button>
+
+            </div>
+
+            <div class="answer" id="q22">
+
+                <strong class="result"></strong>
+
+                <p>
+                    OR means at least one of the two conditions is true.
+                    Therefore, x is even or x is divisible by 3.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 23 -->
+
+        <div class="question-card">
+
+            <h2>
+                23. Which number makes the statement
+                "x is even AND x is greater than 5" true?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q23')">
+                    A) 4
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q23')">
+                    B) 5
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q23')">
+                    C) 8
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q23')">
+                    D) 9
+                </button>
+
+            </div>
+
+            <div class="answer" id="q23">
+
+                <strong class="result"></strong>
+
+                <p>
+                    8 is even and 8 is greater than 5.
+                    Therefore, both conditions are satisfied.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 24 -->
+
+        <div class="question-card">
+
+            <h2>
+                24. If p → q is true and q is false,
+                what must be the truth value of p?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q24')">
+                    A) False
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q24')">
+                    B) True
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q24')">
+                    C) Both true and false
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q24')">
+                    D) Cannot be determined
+                </button>
+
+            </div>
+
+            <div class="answer" id="q24">
+
+                <strong class="result"></strong>
+
+                <p>
+                    An implication p → q is false when p is true
+                    and q is false.
+                    Since the implication is given as true and q is false,
+                    p must be false.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 25 -->
+
+        <div class="question-card">
+
+            <h2>
+                25. If p is false and q is true, what is the truth value of
+                (NOT p) AND q?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q25')">
+                    A) True
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q25')">
+                    B) False
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q25')">
+                    C) Both
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q25')">
+                    D) Cannot be determined
+                </button>
+
+            </div>
+
+            <div class="answer" id="q25">
+
+                <strong class="result"></strong>
+
+                <p>
+                    p is false, so NOT p is true.
+                    q is also true.
+                    Therefore:
+                    true AND true = true.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+</main>
+
+
+<footer class="home-footer">
+
+    <p>
+        © 2026 Free Study Hub · Created by <strong>AHR</strong>
+    </p>
+
+</footer>
+
+
+<script>
+
+function checkAnswer(button, correct, answerId) {
+
+    const questionCard = button.closest(".question-card");
+    const buttons = questionCard.querySelectorAll(".options button");
+    const answer = document.getElementById(answerId);
+    const result = answer.querySelector(".result");
+
+    buttons.forEach(btn => {
+        btn.disabled = true;
+    });
+
+    if (correct) {
+
+        button.classList.add("correct");
+        result.textContent = "✓ Correct!";
+
+    } else {
+
+        button.classList.add("wrong");
+        result.textContent = "✗ Incorrect";
+
+        buttons.forEach(btn => {
+
+            if (btn.getAttribute("onclick").includes("true")) {
+                btn.classList.add("correct");
+            }
+
+        });
+
+    }
+
+    answer.style.display = "block";
+
+}
+
+</script>
+
+</body>
+
+</html>

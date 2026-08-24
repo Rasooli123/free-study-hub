@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Şifreler | Free Study Hub</title>
+
+    <meta
+        name="description"
+        content="TR-YÖS IQ Chapter 1: Şifreler. Practice 25 original coding and password pattern questions."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="top-header">
+
+    <div class="brand">
+        <div class="brand-icon">📖</div>
+
+        <div>
+            <h1>FREE <span>STUDY</span> HUB</h1>
+            <p>TR-YÖS Preparation</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">⌂ &nbsp; Home</a>
+        <a href="math1.html">Math 1</a>
+        <a href="math2.html">Math 2</a>
+        <a href="iq.html" class="active">IQ</a>
+    </nav>
+
+</header>
+
+
+<main class="chapter-page">
+
+    <section class="chapter-hero">
+        <span>IQ</span>
+        <h1>Chapter 1: Şifreler</h1>
+        <p>Practice coding, symbols, sequences and password patterns.</p>
+    </section>
+
+
+    <section class="questions">
+
+
+        <!-- QUESTION 1 -->
+        <div class="question-card">
+
+            <h2>1. In a certain code, each number is multiplied by 2 and then 3 is added. If 7 is coded as 17, how is 12 coded?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q1')">A) 24</button>
+                <button onclick="checkAnswer(this, true, 'q1')">B) 27</button>
+                <button onclick="checkAnswer(this, false, 'q1')">C) 29</button>
+                <button onclick="checkAnswer(this, false, 'q1')">D) 30</button>
+            </div>
+
+            <div class="answer" id="q1">
+                <strong class="result"></strong>
+                <p>The rule is ×2 + 3. Therefore, 12 × 2 + 3 = 27.</p>
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 2 -->
+        <div class="question-card">
+
+            <h2>2. In a code, A = 1, B = 2, C = 3, ..., Z = 26. What is the code of <strong>BAD</strong>?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, true, 'q2')">A) 214</button>
+                <button onclick="checkAnswer(this, false, 'q2')">B) 241</button>
+                <button onclick="checkAnswer(this, false, 'q2')">C) 124</button>
+                <button onclick="checkAnswer(this, false, 'q2')">D) 421</button>
+            </div>
+
+            <div class="answer" id="q2">
+                <strong class="result"></strong>
+                <p>B = 2, A = 1 and D = 4. Therefore, BAD → 214.</p>
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 3 -->
+        <div class="question-card">
+
+            <h2>3. Observe the coded pairs:</h2>
+
+            <div style="text-align:center; font-size:22px; margin:15px 0;">
+                <strong>
+                    12 → 21<br>
+                    34 → 43<br>
+                    56 → 65
+                </strong>
+            </div>
+
+            <h2>Using the same rule, how is 78 coded?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q3')">A) 76</button>
+                <button onclick="checkAnswer(this, false, 'q3')">B) 85</button>
+                <button onclick="checkAnswer(this, true, 'q3')">C) 87</button>
+                <button onclick="checkAnswer(this, false, 'q3')">D) 98</button>
+            </div>
+
+            <div class="answer" id="q3">
+                <strong class="result"></strong>
+                <p>The two digits are reversed. Therefore, 78 → 87.</p>
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 4 -->
+        <div class="question-card">
+
+            <h2>4. A code follows this pattern:</h2>
+
+            <div style="text-align:center; font-size:22px; margin:15px 0;">
+                <strong>
+                    2 → 7 &nbsp;&nbsp; 4 → 13 &nbsp;&nbsp; 6 → 19
+                </strong>
+            </div>
+
+            <h2>What is the code for 8?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q4')">A) 21</button>
+                <button onclick="checkAnswer(this, true, 'q4')">B) 25</button>
+                <button onclick="checkAnswer(this, false, 'q4')">C) 27</button>
+                <button onclick="checkAnswer(this, false, 'q4')">D) 29</button>
+            </div>
+
+            <div class="answer" id="q4">
+                <strong class="result"></strong>
+                <p>The rule is ×3 + 1. Therefore, 8 × 3 + 1 = 25.</p>
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 5 -->
+        <div class="question-card">
+
+            <h2>5. A number is coded by first adding 4 and then multiplying the result by 3. What is the code of 5?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q5')">A) 19</button>
+                <button onclick="checkAnswer(this, true, 'q5')">B) 27</button>
+                <button onclick="checkAnswer(this, false, 'q5')">C) 29</button>
+                <button onclick="checkAnswer(this, false, 'q5')">D) 32</button>
+            </div>
+
+            <div class="answer" id="q5">
+                <strong class="result"></strong>
+                <p>First: 5 + 4 = 9. Then: 9 × 3 = 27.</p>
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 6 -->
+        <div class="question-card">
+
+            <h2>6. The symbols have the following values:</h2>
+
+            <div style="text-align:center; font-size:28px; margin:15px 0;">
+                <strong>▲ = 6 &nbsp;&nbsp; ● = 4 &nbsp;&nbsp; ■ = 9</strong>
+            </div>
+
+            <h2>What is ▲ + ■ − ●?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q6')">A) 9</button>
+                <button onclick="checkAnswer(this, true, 'q6')">B) 11</button>
+                <button onclick="checkAnswer(this, false, 'q6')">C) 13</button>
+                <button onclick="checkAnswer(this, false, 'q6')">D) 15</button>
+            </div>
+
+            <div class="answer" id="q6">
+                <strong class="result"></strong>
+                <p>6 + 9 − 4 = 11.</p>
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 7 -->
+        <div class="question-card">
+
+            <h2>7. If A = 3, B = 6, C = 9 and D = 12, what is the code of <strong>CAD</strong>?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, true, 'q7')">A) 9312</button>
+                <button onclick="checkAnswer(this, false, 'q7')">B) 3912</button>
+                <button onclick="checkAnswer(this, false, 'q7')">C) 1239</button>
+                <button onclick="checkAnswer(this, false, 'q7')">D) 963</button>
+            </div>
+
+            <div class="answer" id="q7">
+                <strong class="result"></strong>
+                <p>C = 9, A = 3 and D = 12. Therefore, CAD → 9312.</p>
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 8 -->
+        <div class="question-card">
+
+            <h2>8. Observe the pattern:</h2>
+
+            <div style="text-align:center; font-size:24px; margin:15px 0;">
+                <strong>3 → 8 &nbsp;&nbsp; 5 → 12 &nbsp;&nbsp; 7 → 16</strong>
+            </div>
+
+            <h2>What is the code for 10?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q8')">A) 18</button>
+                <button onclick="checkAnswer(this, false, 'q8')">B) 20</button>
+                <button onclick="checkAnswer(this, true, 'q8')">C) 22</button>
+                <button onclick="checkAnswer(this, false, 'q8')">D) 24</button>
+            </div>
+
+            <div class="answer" id="q8">
+                <strong class="result"></strong>
+                <p>The rule is ×2 + 2. Therefore, 10 × 2 + 2 = 22.</p>
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 9 -->
+        <div class="question-card">
+
+            <h2>9. Each letter is replaced by the letter immediately after it in the alphabet. How is <strong>CAT</strong> coded?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, true, 'q9')">A) DBU</button>
+                <button onclick="checkAnswer(this, false, 'q9')">B) CBT</button>
+                <button onclick="checkAnswer(this, false, 'q9')">C) EBU</button>
+                <button onclick="checkAnswer(this, false, 'q9')">D) DCT</button>
+            </div>
+
+            <div class="answer" id="q9">
+                <strong class="result"></strong>
+                <p>C → D, A → B and T → U. Therefore, CAT → DBU.</p>
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 10 -->
+        <div class="question-card">
+
+            <h2>10. Each letter is replaced by the letter immediately before it. How is <strong>GAME</strong> coded?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, true, 'q10')">A) FZLD</button>
+                <button onclick="checkAnswer(this, false, 'q10')">B) FAME</button>
+                <button onclick="checkAnswer(this, false, 'q10')">C) HBNF</button>
+                <button onclick="checkAnswer(this, false, 'q10')">D) GZLE</button>
+            </div>
+
+            <div class="answer" id="q10">
+                <strong class="result"></strong>
+                <p>G → F, A → Z, M → L and E → D. Therefore, GAME → FZLD.</p>
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 11 -->
+        <div class="question-card">
+
+            <h2>11. Observe the symbol sequence:</h2>
+
+            <div style="text-align:center; font-size:32px; margin:18px 0;">
+                <strong>▲ &nbsp; ● &nbsp; ■ &nbsp; ▲ &nbsp; ● &nbsp; ?</strong>
+            </div>
+
+            <h2>Which symbol should replace the question mark?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q11')">A) ▲</button>
+                <button onclick="checkAnswer(this, false, 'q11')">B) ●</button>
+                <button onclick="checkAnswer(this, true, 'q11')">C) ■</button>
+                <button onclick="checkAnswer(this, false, 'q11')">D) ◆</button>
+            </div>
+
+            <div class="answer" id="q11">
+                <strong class="result"></strong>
+                <p>The pattern ▲, ●, ■ repeats. Therefore, the missing symbol is ■.</p>
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 12 -->
+        <div class="question-card">
+
+            <h2>12. If ▲ = 5 and ● = 7, and ▲● means the product of their values, what is ▲●?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q12')">A) 12</button>
+                <button onclick="checkAnswer(this, false, 'q12')">B) 30</button>
+                <button onclick="checkAnswer(this, true, 'q12')">C) 35</button>
+                <button onclick="checkAnswer(this, false, 'q12')">D) 40</button>
+            </div>
+
+            <div class="answer" id="q12">
+                <strong class="result"></strong>
+                <p>▲● = 5 × 7 = 35.</p>
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 13 -->
+        <div class="question-card">
+
+            <h2>13. A three-digit number is coded by increasing its first digit by 2, decreasing its second digit by 1, and leaving the third digit unchanged. What is the code of 473?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, true, 'q13')">A) 663</button>
+                <button onclick="checkAnswer(this, false, 'q13')">B) 563</button>
+                <button onclick="checkAnswer(this, false, 'q13')">C) 483</button>
+                <button onclick="checkAnswer(this, false, 'q13')">D) 572</button>
+            </div>
+
+            <div class="answer" id="q13">
+                <strong class="result"></strong>
+                <p>4 + 2 = 6, 7 − 1 = 6, and 3 stays unchanged. Therefore, 473 → 663.</p>
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 14 -->
+        <div class="question-card">
+
+            <h2>14. If 246 is coded as 642, 135 as 531 and 472 as 274, what rule is being used?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, true, 'q14')">A) The digits are reversed</button>
+                <button onclick="checkAnswer(this, false, 'q14')">B) Each digit is increased by 2</button>
+                <button onclick="checkAnswer(this, false, 'q14')">C) The first two digits are exchanged</button>
+                <button onclick="checkAnswer(this, false, 'q14')">D) The digits are added</button>
+            </div>
+
+            <div class="answer" id="q14">
+                <strong class="result"></strong>
+                <p>In every example, the entire number is written in reverse order.</p>
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 15 -->
+        <div class="question-card">
+
+            <h2>15. A code is obtained by adding the first two digits and multiplying their sum by the third digit. What is the code of 234?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q15')">A) 14</button>
+                <button onclick="checkAnswer(this, true, 'q15')">B) 20</button>
+                <button onclick="checkAnswer(this, false, 'q15')">C) 24</button>
+                <button onclick="checkAnswer(this, false, 'q15')">D) 36</button>
+            </div>
+
+            <div class="answer" id="q15">
+                <strong class="result"></strong>
+                <p>(2 + 3) × 4 = 5 × 4 = 20.</p>
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 16 -->
+        <div class="question-card">
+
+            <h2>16. Observe the coded pairs:</h2>
+
+            <div style="text-align:center; font-size:22px; margin:15px 0;">
+                <strong>
+                    AB → 12<br>
+                    BC → 23<br>
+                    CD → 34
+                </strong>
+            </div>
+
+            <h2>Using the same rule, what is DE?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q16')">A) 35</button>
+                <button onclick="checkAnswer(this, true, 'q16')">B) 45</button>
+                <button onclick="checkAnswer(this, false, 'q16')">C) 54</button>
+                <button onclick="checkAnswer(this, false, 'q16')">D) 56</button>
+            </div>
+
+            <div class="answer" id="q16">
+                <strong class="result"></strong>
+                <p>D = 4 and E = 5. Therefore, DE → 45.</p>
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 17 -->
+        <div class="question-card">
+
+            <h2>17. The symbols have the following values:</h2>
+
+            <div style="text-align:center; font-size:28px; margin:15px 0;">
+                <strong>◆ = 8 &nbsp;&nbsp; ● = 5 &nbsp;&nbsp; ▲ = 3</strong>
+            </div>
+
+            <h2>What is ◆ − ▲ + ●?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q17')">A) 8</button>
+                <button onclick="checkAnswer(this, true, 'q17')">B) 10</button>
+                <button onclick="checkAnswer(this, false, 'q17')">C) 12</button>
+                <button onclick="checkAnswer(this, false, 'q17')">D) 16</button>
+            </div>
+
+            <div class="answer" id="q17">
+                <strong class="result"></strong>
+                <p>8 − 3 + 5 = 10.</p>
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 18 -->
+        <div class="question-card">
+
+            <h2>18. The triangle moves one position to the right in each row:</h2>
+
+            <div style="text-align:center; font-size:28px; line-height:1.6; margin:15px 0;">
+                <strong>
+                    ▲ ○ ○ ○<br>
+                    ○ ▲ ○ ○<br>
+                    ○ ○ ▲ ○<br>
+                    ?
+                </strong>
+            </div>
+
+            <h2>Which arrangement comes next?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q18')">A) ▲ ○ ○ ○</button>
+                <button onclick="checkAnswer(this, false, 'q18')">B) ○ ▲ ○ ○</button>
+                <button onclick="checkAnswer(this, false, 'q18')">C) ○ ○ ▲ ○</button>
+                <button onclick="checkAnswer(this, true, 'q18')">D) ○ ○ ○ ▲</button>
+            </div>
+
+            <div class="answer" id="q18">
+                <strong class="result"></strong>
+                <p>The triangle moves one position to the right each time. Therefore, the answer is ○ ○ ○ ▲.</p>
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 19 -->
+        <div class="question-card">
+
+            <h2>19. The alphabet positions of the letters are written in reverse order. What is the code of <strong>DOG</strong>?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q19')">A) 4157</button>
+                <button onclick="checkAnswer(this, false, 'q19')">B) 4715</button>
+                <button onclick="checkAnswer(this, true, 'q19')">C) 7154</button>
+                <button onclick="checkAnswer(this, false, 'q19')">D) 7514</button>
+            </div>
+
+            <div class="answer" id="q19">
+                <strong class="result"></strong>
+                <p>D = 4, O = 15 and G = 7. Reversing the order gives 7, 15, 4 → 7154.</p>
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 20 -->
+        <div class="question-card">
+
+            <h2>20. A number is coded in three steps: add 2, multiply by 3, then subtract 1. What is the code of 5?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q20')">A) 18</button>
+                <button onclick="checkAnswer(this, true, 'q20')">B) 20</button>
+                <button onclick="checkAnswer(this, false, 'q20')">C) 21</button>
+                <button onclick="checkAnswer(this, false, 'q20')">D) 22</button>
+            </div>
+
+            <div class="answer" id="q20">
+                <strong class="result"></strong>
+                <p>5 + 2 = 7 → 7 × 3 = 21 → 21 − 1 = 20.</p>
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 21 -->
+        <div class="question-card">
+
+            <h2>21. Which figure should come next?</h2>
+
+            <div style="text-align:center; font-size:34px; margin:18px 0;">
+                <strong>▲ → ▶ → ▼ → ◀ → ?</strong>
+            </div>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q21')">A) ▶</button>
+                <button onclick="checkAnswer(this, true, 'q21')">B) ▲</button>
+                <button onclick="checkAnswer(this, false, 'q21')">C) ▼</button>
+                <button onclick="checkAnswer(this, false, 'q21')">D) ◀</button>
+            </div>
+
+            <div class="answer" id="q21">
+                <strong class="result"></strong>
+                <p>The triangle rotates 90° clockwise at each step. After ◀ comes ▲.</p>
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 22 -->
+        <div class="question-card">
+
+            <h2>22. In a code system, vowels are replaced by 0 and consonants by 1. What is the code of <strong>CAT</strong>?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q22')">A) 001</button>
+                <button onclick="checkAnswer(this, true, 'q22')">B) 101</button>
+                <button onclick="checkAnswer(this, false, 'q22')">C) 110</button>
+                <button onclick="checkAnswer(this, false, 'q22')">D) 111</button>
+            </div>
+
+            <div class="answer" id="q22">
+                <strong class="result"></strong>
+                <p>C is a consonant → 1, A is a vowel → 0, T is a consonant → 1. Therefore, CAT → 101.</p>
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 23 -->
+        <div class="question-card">
+
+            <h2>23. In a code, odd digits are increased by 2 while even digits are decreased by 1. What is the code of 538?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q23')">A) 747</button>
+                <button onclick="checkAnswer(this, true, 'q23')">B) 757</button>
+                <button onclick="checkAnswer(this, false, 'q23')">C) 746</button>
+                <button onclick="checkAnswer(this, false, 'q23')">D) 765</button>
+            </div>
+
+            <div class="answer" id="q23">
+                <strong class="result"></strong>
+                <p>5 → 7, 3 → 5 and 8 → 7. Therefore, 538 → 757.</p>
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 24 -->
+        <div class="question-card">
+
+            <h2>24. A password contains three digits. The first digit is twice the second digit, while the third digit is 2 more than the second digit. If the second digit is 3, what is the password?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q24')">A) 326</button>
+                <button onclick="checkAnswer(this, true, 'q24')">B) 635</button>
+                <button onclick="checkAnswer(this, false, 'q24')">C) 639</button>
+                <button onclick="checkAnswer(this, false, 'q24')">D) 936</button>
+            </div>
+
+            <div class="answer" id="q24">
+                <strong class="result"></strong>
+                <p>The first digit is 2 × 3 = 6. The second is 3. The third is 3 + 2 = 5. Therefore, the password is 635.</p>
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 25 -->
+        <div class="question-card">
+
+            <h2>25. A code follows three rules in order:</h2>
+
+            <div style="margin:15px 0; line-height:1.8;">
+                <p><strong>1.</strong> Reverse the digits.</p>
+                <p><strong>2.</strong> Add 1 to the first digit.</p>
+                <p><strong>3.</strong> Subtract 1 from the last digit.</p>
+            </div>
+
+            <h2>What is the final code of 352?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q25')">A) 342</button>
+                <button onclick="checkAnswer(this, false, 'q25')">B) 353</button>
+                <button onclick="checkAnswer(this, true, 'q25')">C) 352</button>
+                <button onclick="checkAnswer(this, false, 'q25')">D) 362</button>
+            </div>
+
+            <div class="answer" id="q25">
+                <strong class="result"></strong>
+                <p>First, reverse 352 → 253. Add 1 to the first digit: 253 → 353. Then subtract 1 from the last digit: 353 → 352. Therefore, the final code is 352.</p>
+            </div>
+
+        </div>
+
+
+    </section>
+
+</main>
+
+
+<footer class="home-footer">
+    <p>© 2026 Free Study Hub · Created by <strong>AHR</strong></p>
+</footer>
+
+
+<script>
+
+function checkAnswer(button, correct, answerId) {
+
+    const questionCard = button.closest(".question-card");
+    const buttons = questionCard.querySelectorAll(".options button");
+    const answer = document.getElementById(answerId);
+    const result = answer.querySelector(".result");
+
+    buttons.forEach(btn => {
+        btn.disabled = true;
+    });
+
+    if (correct) {
+
+        button.classList.add("correct");
+        result.textContent = "✓ Correct!";
+
+    } else {
+
+        button.classList.add("wrong");
+        result.textContent = "✗ Incorrect";
+
+        buttons.forEach(btn => {
+
+            if (btn.getAttribute("onclick").includes("true")) {
+                btn.classList.add("correct");
+            }
+
+        });
+
+    }
+
+    answer.style.display = "block";
+
+}
+
+</script>
+
+</body>
+
+</html>

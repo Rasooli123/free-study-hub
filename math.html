@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>TR-YÖS Mathematics | Free Study Hub</title>
+
+    <meta
+        name="description"
+        content="Free TR-YÖS Mathematics practice questions and explanations."
+    >
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header class="top-header">
+
+    <div class="brand">
+
+        <div class="brand-icon">
+            📖
+        </div>
+
+        <div>
+
+            <h1>
+                FREE <span>STUDY</span> HUB
+            </h1>
+
+            <p>
+                TR-YÖS Mathematics
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <nav aria-label="Main navigation">
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="math.html" class="active">
+            Mathematics
+        </a>
+
+        <a href="#">
+            Logic
+        </a>
+
+        <a href="#">
+            Geometry
+        </a>
+
+        <a href="#">
+            Practice Tests
+        </a>
+
+
+        <!-- DARK MODE TOGGLE -->
+
+        <button
+            class="theme-toggle"
+            id="themeToggle"
+            type="button"
+            aria-label="Switch to dark mode"
+            title="Switch to dark mode"
+        >
+
+            <span
+                id="themeIcon"
+                aria-hidden="true"
+            >
+                🌙
+            </span>
+
+        </button>
+
+    </nav>
+
+</header>
+
+
+
+<!-- =========================
+     MAIN
+========================= -->
+
+<main>
+
+
+    <!-- =========================
+         HERO
+    ========================= -->
+
+    <section class="hero">
+
+        <h2>
+            TR-YÖS Mathematics
+        </h2>
+
+        <p>
+            Practice Mathematics questions and
+            improve your problem-solving skills.
+        </p>
+
+    </section>
+
+
+
+    <!-- =========================
+         QUIZ CARD
+    ========================= -->
+
+    <section class="card">
+
+        <div class="quiz-info">
+
+            <span id="question-number">
+                Question 1
+            </span>
+
+            <span id="score">
+                Score: 0
+            </span>
+
+        </div>
+
+
+        <div class="progress-container">
+
+            <div id="progress-bar"></div>
+
+        </div>
+
+
+        <p id="question-text"></p>
+
+
+        <div id="options"></div>
+
+
+        <p id="answer"></p>
+
+
+        <button
+            id="next-button"
+            onclick="nextQuestion()"
+            style="display:none;"
+        >
+            Next Question
+        </button>
+
+    </section>
+
+
+
+    <!-- =========================
+         RESULT CARD
+    ========================= -->
+
+    <section
+        class="card"
+        id="result"
+        style="display:none; text-align:center;"
+    >
+
+        <h2>
+            🎉 Test Complete!
+        </h2>
+
+        <p id="final-score"></p>
+
+        <button onclick="restartQuiz()">
+            Try Again
+        </button>
+
+    </section>
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <p>
+        © 2026 Free Study Hub
+    </p>
+
+    <p>
+        Free educational project for students.
+    </p>
+
+</footer>
+
+
+
+<!-- =========================
+     QUESTIONS
+========================= -->
+
+<script src="questions.js"></script>
+
+
+
+<!-- =========================
+     QUIZ SCRIPT
+========================= -->
+
+<script>
+
+let currentQuestion = 0;
+let score = 0;
+let answered = false;
+
+
+/* =========================
+   LOAD QUESTION
+========================= */
+
+function loadQuestion() {
+
+    const question =
+        mathQuestions[currentQuestion];
+
+    answered = false;
+
+
+    document.getElementById(
+        "question-number"
+    ).innerText =
+        "Question " +
+        (currentQuestion + 1) +
+        " of " +
+        mathQuestions.length;
+
+
+    document.getElementById(
+        "score"
+    ).innerText =
+        "Score: " + score;
+
+
+    document.getElementById(
+        "question-text"
+    ).innerText =
+        question.question;
+
+
+    const optionsContainer =
+        document.getElementById("options");
+
+
+    optionsContainer.innerHTML = "";
+
+
+    question.options.forEach(
+        function(option, index) {
+
+            const button =
+                document.createElement("button");
+
+
+            button.innerText =
+                String.fromCharCode(65 + index) +
+                ") " +
+                option;
+
+
+            button.type = "button";
+
+
+            button.onclick =
+                function() {
+
+                    checkAnswer(
+                        index,
+                        button
+                    );
+
+                };
+
+
+            optionsContainer.appendChild(
+                button
+            );
+
+        }
+    );
+
+
+    document.getElementById(
+        "answer"
+    ).innerText = "";
+
+
+    document.getElementById(
+        "next-button"
+    ).style.display = "none";
+
+
+    const progress =
+        ((currentQuestion + 1) /
+        mathQuestions.length) *
+        100;
+
+
+    document.getElementById(
+        "progress-bar"
+    ).style.width =
+        progress + "%";
+
+}
+
+
+
+/* =========================
+   CHECK ANSWER
+========================= */
+
+function checkAnswer(
+    choice,
+    clickedButton
+) {
+
+    if (answered) {
+        return;
+    }
+
+
+    answered = true;
+
+
+    const question =
+        mathQuestions[currentQuestion];
+
+
+    const answer =
+        document.getElementById("answer");
+
+
+    if (choice === question.answer) {
+
+        score++;
+
+
+        answer.innerText =
+            "✅ Correct! " +
+            question.explanation;
+
+    }
+
+    else {
+
+        answer.innerText =
+            "❌ Incorrect. " +
+            "The correct answer is " +
+            String.fromCharCode(
+                65 + question.answer
+            ) +
+            ") " +
+            question.options[
+                question.answer
+            ] +
+            ". " +
+            question.explanation;
+
+    }
+
+
+    document.getElementById(
+        "score"
+    ).innerText =
+        "Score: " + score;
+
+
+    document
+        .querySelectorAll(
+            "#options button"
+        )
+        .forEach(
+            function(button) {
+
+                button.disabled = true;
+
+            }
+        );
+
+
+    document.getElementById(
+        "next-button"
+    ).style.display =
+        "inline-block";
+
+}
+
+
+
+/* =========================
+   NEXT QUESTION
+========================= */
+
+function nextQuestion() {
+
+    currentQuestion++;
+
+
+    if (
+        currentQuestion >=
+        mathQuestions.length
+    ) {
+
+        showResults();
+
+        return;
+
+    }
+
+
+    loadQuestion();
+
+}
+
+
+
+/* =========================
+   SHOW RESULTS
+========================= */
+
+function showResults() {
+
+    const quizCard =
+        document.querySelector(
+            "main > .card"
+        );
+
+
+    if (quizCard) {
+
+        quizCard.style.display =
+            "none";
+
+    }
+
+
+    document.getElementById(
+        "result"
+    ).style.display =
+        "block";
+
+
+    document.getElementById(
+        "final-score"
+    ).innerText =
+        "You scored " +
+        score +
+        " out of " +
+        mathQuestions.length +
+        ".";
+
+}
+
+
+
+/* =========================
+   RESTART QUIZ
+========================= */
+
+function restartQuiz() {
+
+    currentQuestion = 0;
+
+    score = 0;
+
+    answered = false;
+
+
+    const quizCard =
+        document.querySelector(
+            "main > .card"
+        );
+
+
+    if (quizCard) {
+
+        quizCard.style.display =
+            "block";
+
+    }
+
+
+    document.getElementById(
+        "result"
+    ).style.display =
+        "none";
+
+
+    loadQuestion();
+
+}
+
+
+
+/* =========================
+   DARK MODE
+========================= */
+
+(function () {
+
+    const themeToggle =
+        document.getElementById(
+            "themeToggle"
+        );
+
+
+    const themeIcon =
+        document.getElementById(
+            "themeIcon"
+        );
+
+
+    function updateThemeIcon() {
+
+        if (
+            !themeToggle ||
+            !themeIcon
+        ) {
+            return;
+        }
+
+
+        const isDark =
+            document.body.classList.contains(
+                "dark-mode"
+            );
+
+
+        themeIcon.textContent =
+            isDark
+                ? "☀️"
+                : "🌙";
+
+
+        themeToggle.setAttribute(
+            "aria-label",
+            isDark
+                ? "Switch to light mode"
+                : "Switch to dark mode"
+        );
+
+
+        themeToggle.setAttribute(
+            "title",
+            isDark
+                ? "Switch to light mode"
+                : "Switch to dark mode"
+        );
+
+    }
+
+
+
+    /* RESTORE SAVED THEME */
+
+    const savedTheme =
+        localStorage.getItem(
+            "freeStudyHubTheme"
+        );
+
+
+    if (
+        savedTheme === "dark"
+    ) {
+
+        document.body.classList.add(
+            "dark-mode"
+        );
+
+    }
+
+
+    updateThemeIcon();
+
+
+
+    /* TOGGLE THEME */
+
+    if (themeToggle) {
+
+        themeToggle.addEventListener(
+            "click",
+            function () {
+
+                document.body.classList.toggle(
+                    "dark-mode"
+                );
+
+
+                const isDark =
+                    document.body.classList.contains(
+                        "dark-mode"
+                    );
+
+
+                localStorage.setItem(
+                    "freeStudyHubTheme",
+                    isDark
+                        ? "dark"
+                        : "light"
+                );
+
+
+                updateThemeIcon();
+
+            }
+        );
+
+    }
+
+})();
+
+
+
+/* =========================
+   START QUIZ
+========================= */
+
+if (
+    typeof mathQuestions !== "undefined" &&
+    mathQuestions.length > 0
+) {
+
+    loadQuestion();
+
+}
+
+else {
+
+    document.getElementById(
+        "question-text"
+    ).innerText =
+        "No questions are available.";
+
+}
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First-Degree Equations | Free Study Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="top-header">
+
+    <div class="brand">
+        <div class="brand-icon">📖</div>
+
+        <div>
+            <h1>FREE <span>STUDY</span> HUB</h1>
+            <p>TR-YÖS Preparation</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="index.html">⌂ &nbsp; Home</a>
+        <a href="math1.html" class="active">Math 1</a>
+        <a href="math2.html">Math 2</a>
+    </nav>
+
+</header>
+
+
+<main class="chapter-page">
+
+    <section class="chapter-hero">
+        <span>MATHEMATICS 1</span>
+        <h1>Chapter 3: First-Degree Equations</h1>
+        <p>Practice questions based on the chapter.</p>
+    </section>
+
+
+    <section class="questions">
+
+
+        <!-- QUESTION 1 -->
+        <div class="question-card">
+            <h2>1. Solve for x: 3x + 7 = 25</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q1')">A) 4</button>
+                <button onclick="checkAnswer(this, false, 'q1')">B) 5</button>
+                <button onclick="checkAnswer(this, true, 'q1')">C) 6</button>
+                <button onclick="checkAnswer(this, false, 'q1')">D) 7</button>
+            </div>
+
+            <div class="answer" id="q1">
+                <strong class="result"></strong>
+                <p>3x + 7 = 25 → 3x = 18 → x = 6.</p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 2 -->
+        <div class="question-card">
+            <h2>2. Solve: 5x - 9 = 2x + 12</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q2')">A) 5</button>
+                <button onclick="checkAnswer(this, false, 'q2')">B) 6</button>
+                <button onclick="checkAnswer(this, true, 'q2')">C) 7</button>
+                <button onclick="checkAnswer(this, false, 'q2')">D) 8</button>
+            </div>
+
+            <div class="answer" id="q2">
+                <strong class="result"></strong>
+                <p>5x − 2x = 12 + 9 → 3x = 21 → x = 7.</p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 3 -->
+        <div class="question-card">
+            <h2>3. If 4(x - 3) = 2x + 10, what is x?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q3')">A) 9</button>
+                <button onclick="checkAnswer(this, true, 'q3')">B) 11</button>
+                <button onclick="checkAnswer(this, false, 'q3')">C) 12</button>
+                <button onclick="checkAnswer(this, false, 'q3')">D) 13</button>
+            </div>
+
+            <div class="answer" id="q3">
+                <strong class="result"></strong>
+                <p>4x − 12 = 2x + 10 → 2x = 22 → x = 11.</p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 4 -->
+        <div class="question-card">
+            <h2>4. Solve: 7 - 2(x + 3) = -9</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q4')">A) 4</button>
+                <button onclick="checkAnswer(this, true, 'q4')">B) 5</button>
+                <button onclick="checkAnswer(this, false, 'q4')">C) 6</button>
+                <button onclick="checkAnswer(this, false, 'q4')">D) 7</button>
+            </div>
+
+            <div class="answer" id="q4">
+                <strong class="result"></strong>
+                <p>7 − 2x − 6 = −9 → 1 − 2x = −9 → −2x = −10 → x = 5.</p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 5 -->
+        <div class="question-card">
+            <h2>5. Solve: (x + 4)/3 = 6</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q5')">A) 12</button>
+                <button onclick="checkAnswer(this, false, 'q5')">B) 13</button>
+                <button onclick="checkAnswer(this, true, 'q5')">C) 14</button>
+                <button onclick="checkAnswer(this, false, 'q5')">D) 15</button>
+            </div>
+
+            <div class="answer" id="q5">
+                <strong class="result"></strong>
+                <p>x + 4 = 18 → x = 14.</p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 6 -->
+        <div class="question-card">
+            <h2>6. Solve: (2x - 3)/5 = (x + 4)/2</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q6')">A) -24</button>
+                <button onclick="checkAnswer(this, true, 'q6')">B) -26</button>
+                <button onclick="checkAnswer(this, false, 'q6')">C) 24</button>
+                <button onclick="checkAnswer(this, false, 'q6')">D) 26</button>
+            </div>
+
+            <div class="answer" id="q6">
+                <strong class="result"></strong>
+                <p>Multiply by 10: 2(2x − 3) = 5(x + 4). Thus 4x − 6 = 5x + 20 → x = −26.</p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 7 -->
+        <div class="question-card">
+            <h2>7. If 3(2x - 5) - 4(x + 1) = 9, what is x?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q7')">A) 12</button>
+                <button onclick="checkAnswer(this, true, 'q7')">B) 14</button>
+                <button onclick="checkAnswer(this, false, 'q7')">C) 16</button>
+                <button onclick="checkAnswer(this, false, 'q7')">D) 18</button>
+            </div>
+
+            <div class="answer" id="q7">
+                <strong class="result"></strong>
+                <p>6x − 15 − 4x − 4 = 9 → 2x − 19 = 9 → 2x = 28 → x = 14.</p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 8 -->
+        <div class="question-card">
+            <h2>8. Solve: 0.4x + 3.2 = 8</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q8')">A) 10</button>
+                <button onclick="checkAnswer(this, false, 'q8')">B) 11</button>
+                <button onclick="checkAnswer(this, true, 'q8')">C) 12</button>
+                <button onclick="checkAnswer(this, false, 'q8')">D) 13</button>
+            </div>
+
+            <div class="answer" id="q8">
+                <strong class="result"></strong>
+                <p>0.4x = 4.8 → x = 12.</p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 9 -->
+        <div class="question-card">
+            <h2>9. Solve: 5(x - 2) = 3(x + 4) + 6</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q9')">A) 12</button>
+                <button onclick="checkAnswer(this, false, 'q9')">B) 13</button>
+                <button onclick="checkAnswer(this, true, 'q9')">C) 14</button>
+                <button onclick="checkAnswer(this, false, 'q9')">D) 15</button>
+            </div>
+
+            <div class="answer" id="q9">
+                <strong class="result"></strong>
+                <p>5x − 10 = 3x + 12 + 6 → 2x = 28 → x = 14.</p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 10 -->
+        <div class="question-card">
+            <h2>10. If 2x + 5 = 17, what is the value of 3x - 1?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q10')">A) 15</button>
+                <button onclick="checkAnswer(this, false, 'q10')">B) 16</button>
+                <button onclick="checkAnswer(this, true, 'q10')">C) 17</button>
+                <button onclick="checkAnswer(this, false, 'q10')">D) 18</button>
+            </div>
+
+            <div class="answer" id="q10">
+                <strong class="result"></strong>
+                <p>2x = 12 → x = 6. Therefore, 3x − 1 = 18 − 1 = 17.</p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 11 -->
+        <div class="question-card">
+            <h2>11. Solve: 4 - 3(2x - 1) = 2x + 11</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q11')">A) -1</button>
+                <button onclick="checkAnswer(this, true, 'q11')">B) -1/2</button>
+                <button onclick="checkAnswer(this, false, 'q11')">C) 1/2</button>
+                <button onclick="checkAnswer(this, false, 'q11')">D) 1</button>
+            </div>
+
+            <div class="answer" id="q11">
+                <strong class="result"></strong>
+                <p>4 − 6x + 3 = 2x + 11 → 7 − 6x = 2x + 11 → −4 = 8x → x = −1/2.</p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 12 -->
+        <div class="question-card">
+            <h2>12. Solve: 2(x - 3) + 5 = 3(x - 1) - 4</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q12')">A) 4</button>
+                <button onclick="checkAnswer(this, false, 'q12')">B) 5</button>
+                <button onclick="checkAnswer(this, true, 'q12')">C) 6</button>
+                <button onclick="checkAnswer(this, false, 'q12')">D) 7</button>
+            </div>
+
+            <div class="answer" id="q12">
+                <strong class="result"></strong>
+                <p>2x − 6 + 5 = 3x − 3 − 4 → 2x − 1 = 3x − 7 → x = 6.</p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 13 -->
+        <div class="question-card">
+            <h2>13. If 5x - 2 = 3x + 10, find x/2.</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q13')">A) 2</button>
+                <button onclick="checkAnswer(this, true, 'q13')">B) 3</button>
+                <button onclick="checkAnswer(this, false, 'q13')">C) 4</button>
+                <button onclick="checkAnswer(this, false, 'q13')">D) 6</button>
+            </div>
+
+            <div class="answer" id="q13">
+                <strong class="result"></strong>
+                <p>5x − 3x = 10 + 2 → 2x = 12 → x = 6. Therefore x/2 = 3.</p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 14 -->
+        <div class="question-card">
+            <h2>14. For what value of k does the equation (k - 2)x = 12 have no solution?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q14')">A) 0</button>
+                <button onclick="checkAnswer(this, false, 'q14')">B) 1</button>
+                <button onclick="checkAnswer(this, true, 'q14')">C) 2</button>
+                <button onclick="checkAnswer(this, false, 'q14')">D) 3</button>
+            </div>
+
+            <div class="answer" id="q14">
+                <strong class="result"></strong>
+                <p>If k = 2, the equation becomes 0x = 12, which is impossible. Therefore k = 2.</p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 15 -->
+        <div class="question-card">
+            <h2>15. For what value of k does (k - 3)x = 0 have infinitely many solutions?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q15')">A) 1</button>
+                <button onclick="checkAnswer(this, false, 'q15')">B) 2</button>
+                <button onclick="checkAnswer(this, true, 'q15')">C) 3</button>
+                <button onclick="checkAnswer(this, false, 'q15')">D) 4</button>
+            </div>
+
+            <div class="answer" id="q15">
+                <strong class="result"></strong>
+                <p>When k = 3, the equation becomes 0x = 0, which is true for every x. Thus there are infinitely many solutions.</p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 16 -->
+        <div class="question-card">
+            <h2>16. Solve: (3x + 2)/4 - (x - 1)/2 = 5</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q16')">A) 14</button>
+                <button onclick="checkAnswer(this, false, 'q16')">B) 15</button>
+                <button onclick="checkAnswer(this, true, 'q16')">C) 16</button>
+                <button onclick="checkAnswer(this, false, 'q16')">D) 17</button>
+            </div>
+
+            <div class="answer" id="q16">
+                <strong class="result"></strong>
+                <p>Multiply by 4: 3x + 2 − 2(x − 1) = 20 → 3x + 2 − 2x + 2 = 20 → x + 4 = 20 → x = 16.</p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 17 -->
+        <div class="question-card">
+            <h2>17. If 3x - 4 = 2(x + 5), what is x + 3?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q17')">A) 15</button>
+                <button onclick="checkAnswer(this, false, 'q17')">B) 16</button>
+                <button onclick="checkAnswer(this, true, 'q17')">C) 17</button>
+                <button onclick="checkAnswer(this, false, 'q17')">D) 18</button>
+            </div>
+
+            <div class="answer" id="q17">
+                <strong class="result"></strong>
+                <p>3x − 4 = 2x + 10 → x = 14. Therefore x + 3 = 17.</p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 18 -->
+        <div class="question-card">
+            <h2>18. A number increased by 7 is equal to twice the number minus 5. What is the number?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q18')">A) 10</button>
+                <button onclick="checkAnswer(this, true, 'q18')">B) 12</button>
+                <button onclick="checkAnswer(this, false, 'q18')">C) 14</button>
+                <button onclick="checkAnswer(this, false, 'q18')">D) 16</button>
+            </div>
+
+            <div class="answer" id="q18">
+                <strong class="result"></strong>
+                <p>Let the number be x. x + 7 = 2x − 5 → x = 12.</p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 19 -->
+        <div class="question-card">
+            <h2>19. Three consecutive integers have a sum of 72. What is the middle integer?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q19')">A) 22</button>
+                <button onclick="checkAnswer(this, false, 'q19')">B) 23</button>
+                <button onclick="checkAnswer(this, true, 'q19')">C) 24</button>
+                <button onclick="checkAnswer(this, false, 'q19')">D) 25</button>
+            </div>
+
+            <div class="answer" id="q19">
+                <strong class="result"></strong>
+                <p>Let the middle integer be x. Then (x − 1) + x + (x + 1) = 72 → 3x = 72 → x = 24.</p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 20 -->
+        <div class="question-card">
+            <h2>20. The sum of two numbers is 41. The larger number is 5 more than twice the smaller number. What is the smaller number?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q20')">A) 10</button>
+                <button onclick="checkAnswer(this, true, 'q20')">B) 12</button>
+                <button onclick="checkAnswer(this, false, 'q20')">C) 14</button>
+                <button onclick="checkAnswer(this, false, 'q20')">D) 16</button>
+            </div>
+
+            <div class="answer" id="q20">
+                <strong class="result"></strong>
+                <p>Let the smaller number be x. The larger is 2x + 5. Thus x + 2x + 5 = 41 → 3x = 36 → x = 12.</p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 21 -->
+        <div class="question-card">
+            <h2>21. Solve: 2[3x - (x - 4)] = 20</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q21')">A) 2</button>
+                <button onclick="checkAnswer(this, true, 'q21')">B) 3</button>
+                <button onclick="checkAnswer(this, false, 'q21')">C) 4</button>
+                <button onclick="checkAnswer(this, false, 'q21')">D) 5</button>
+            </div>
+
+            <div class="answer" id="q21">
+                <strong class="result"></strong>
+                <p>2[3x − x + 4] = 20 → 2(2x + 4) = 20 → 4x + 8 = 20 → x = 3.</p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 22 -->
+        <div class="question-card">
+            <h2>22. If 4(x + 2) - 3(x - 1) = 19, what is 2x?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q22')">A) 14</button>
+                <button onclick="checkAnswer(this, true, 'q22')">B) 16</button>
+                <button onclick="checkAnswer(this, false, 'q22')">C) 18</button>
+                <button onclick="checkAnswer(this, false, 'q22')">D) 20</button>
+            </div>
+
+            <div class="answer" id="q22">
+                <strong class="result"></strong>
+                <p>4x + 8 − 3x + 3 = 19 → x + 11 = 19 → x = 8. Therefore 2x = 16.</p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 23 -->
+        <div class="question-card">
+            <h2>23. Solve: 0.3(10x - 5) = 0.5(4x + 3)</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q23')">A) 1</button>
+                <button onclick="checkAnswer(this, false, 'q23')">B) 2</button>
+                <button onclick="checkAnswer(this, true, 'q23')">C) 3</button>
+                <button onclick="checkAnswer(this, false, 'q23')">D) 4</button>
+            </div>
+
+            <div class="answer" id="q23">
+                <strong class="result"></strong>
+                <p>3x − 1.5 = 2x + 1.5 → x = 3.</p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 24 -->
+        <div class="question-card">
+            <h2>24. If 2x + 3 = 5x - 12, what is the value of x²?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q24')">A) 16</button>
+                <button onclick="checkAnswer(this, false, 'q24')">B) 20</button>
+                <button onclick="checkAnswer(this, true, 'q24')">C) 25</button>
+                <button onclick="checkAnswer(this, false, 'q24')">D) 36</button>
+            </div>
+
+            <div class="answer" id="q24">
+                <strong class="result"></strong>
+                <p>2x + 3 = 5x − 12 → 15 = 3x → x = 5. Therefore x² = 25.</p>
+            </div>
+        </div>
+
+
+        <!-- QUESTION 25 -->
+        <div class="question-card">
+            <h2>25. If (x - 2)/3 + (x + 1)/2 = 9, what is x?</h2>
+
+            <div class="options">
+                <button onclick="checkAnswer(this, false, 'q25')">A) 9</button>
+                <button onclick="checkAnswer(this, false, 'q25')">B) 10</button>
+                <button onclick="checkAnswer(this, true, 'q25')">C) 11</button>
+                <button onclick="checkAnswer(this, false, 'q25')">D) 12</button>
+            </div>
+
+            <div class="answer" id="q25">
+                <strong class="result"></strong>
+                <p>Multiply by 6: 2(x − 2) + 3(x + 1) = 54 → 5x − 1 = 54 → 5x = 55 → x = 11.</p>
+            </div>
+        </div>
+
+
+    </section>
+
+</main>
+
+
+<footer class="home-footer">
+    <p>© 2026 Free Study Hub · Created by <strong>AHR</strong></p>
+</footer>
+
+
+<script>
+function checkAnswer(button, correct, answerId) {
+
+    const questionCard = button.closest(".question-card");
+    const buttons = questionCard.querySelectorAll(".options button");
+    const answer = document.getElementById(answerId);
+    const result = answer.querySelector(".result");
+
+    buttons.forEach(btn => {
+        btn.disabled = true;
+    });
+
+    if (correct) {
+
+        button.classList.add("correct");
+        result.textContent = "✓ Correct!";
+
+    } else {
+
+        button.classList.add("wrong");
+        result.textContent = "✗ Incorrect";
+
+        buttons.forEach(btn => {
+
+            if (btn.getAttribute("onclick").includes("true")) {
+                btn.classList.add("correct");
+            }
+
+        });
+    }
+
+    answer.style.display = "block";
+}
+</script>
+
+</body>
+</html>

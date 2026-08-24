@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chapter 8: Natural Numbers, Divisibility & Fundamental Arithmetic | Free Study Hub</title>
+
+    <meta
+        name="description"
+        content="Chapter 8 TR-YÖS Mathematics 1 practice questions on natural numbers, divisibility and fundamental arithmetic."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="top-header">
+
+    <div class="brand">
+
+        <div class="brand-icon">
+            📖
+        </div>
+
+        <div>
+            <h1>
+                FREE <span>STUDY</span> HUB
+            </h1>
+
+            <p>
+                TR-YÖS Preparation
+            </p>
+        </div>
+
+    </div>
+
+
+    <nav>
+
+        <a href="index.html">
+            ⌂ &nbsp; Home
+        </a>
+
+        <a href="math1.html" class="active">
+            Math 1
+        </a>
+
+        <a href="math2.html">
+            Math 2
+        </a>
+
+    </nav>
+
+</header>
+
+
+<main class="chapter-page">
+
+
+    <section class="chapter-hero">
+
+        <span>
+            MATHEMATICS 1
+        </span>
+
+        <h1>
+            Chapter 8: Natural Numbers, Divisibility & Fundamental Arithmetic
+        </h1>
+
+        <p>
+            Practice questions based on the chapter.
+        </p>
+
+    </section>
+
+
+    <section class="questions">
+
+
+        <!-- QUESTION 1 -->
+
+        <div class="question-card">
+
+            <h2>
+                1. Which of the following numbers is divisible by 3?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q1')">
+                    A) 124
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q1')">
+                    B) 257
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q1')">
+                    C) 348
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q1')">
+                    D) 451
+                </button>
+
+            </div>
+
+            <div class="answer" id="q1">
+
+                <strong class="result"></strong>
+
+                <p>
+                    A number is divisible by 3 when the sum of its digits is
+                    divisible by 3. For 348, 3 + 4 + 8 = 15, and 15 is
+                    divisible by 3.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 2 -->
+
+        <div class="question-card">
+
+            <h2>
+                2. Which number is divisible by 9?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q2')">
+                    A) 235
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q2')">
+                    B) 729
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q2')">
+                    C) 514
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q2')">
+                    D) 643
+                </button>
+
+            </div>
+
+            <div class="answer" id="q2">
+
+                <strong class="result"></strong>
+
+                <p>
+                    729 has digit sum 7 + 2 + 9 = 18.
+                    Since 18 is divisible by 9, 729 is divisible by 9.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 3 -->
+
+        <div class="question-card">
+
+            <h2>
+                3. What is the greatest common divisor of 24 and 36?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q3')">
+                    A) 4
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q3')">
+                    B) 12
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q3')">
+                    C) 18
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q3')">
+                    D) 24
+                </button>
+
+            </div>
+
+            <div class="answer" id="q3">
+
+                <strong class="result"></strong>
+
+                <p>
+                    The common divisors of 24 and 36 include
+                    1, 2, 3, 4, 6 and 12.
+                    Therefore, the greatest common divisor is 12.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 4 -->
+
+        <div class="question-card">
+
+            <h2>
+                4. What is the least common multiple of 8 and 12?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q4')">
+                    A) 16
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q4')">
+                    B) 20
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q4')">
+                    C) 24
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q4')">
+                    D) 48
+                </button>
+
+            </div>
+
+            <div class="answer" id="q4">
+
+                <strong class="result"></strong>
+
+                <p>
+                    Multiples of 8 include 8, 16, 24, ...
+                    Multiples of 12 include 12, 24, ...
+                    Therefore, the least common multiple is 24.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 5 -->
+
+        <div class="question-card">
+
+            <h2>
+                5. If a number is divisible by both 4 and 6,
+                it must be divisible by which number?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q5')">
+                    A) 8
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q5')">
+                    B) 12
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q5')">
+                    C) 18
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q5')">
+                    D) 24
+                </button>
+
+            </div>
+
+            <div class="answer" id="q5">
+
+                <strong class="result"></strong>
+
+                <p>
+                    A number divisible by both 4 and 6 must be divisible
+                    by their least common multiple.
+                    LCM(4, 6) = 12.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 6 -->
+
+        <div class="question-card">
+
+            <h2>
+                6. Which of the following is a prime number?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q6')">
+                    A) 21
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q6')">
+                    B) 27
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q6')">
+                    C) 29
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q6')">
+                    D) 33
+                </button>
+
+            </div>
+
+            <div class="answer" id="q6">
+
+                <strong class="result"></strong>
+
+                <p>
+                    29 has only two positive divisors:
+                    1 and 29. Therefore, 29 is a prime number.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 7 -->
+
+        <div class="question-card">
+
+            <h2>
+                7. How many positive divisors does 12 have?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q7')">
+                    A) 4
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q7')">
+                    B) 6
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q7')">
+                    C) 8
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q7')">
+                    D) 12
+                </button>
+
+            </div>
+
+            <div class="answer" id="q7">
+
+                <strong class="result"></strong>
+
+                <p>
+                    The positive divisors of 12 are:
+                    1, 2, 3, 4, 6 and 12.
+                    Therefore, there are 6 positive divisors.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 8 -->
+
+        <div class="question-card">
+
+            <h2>
+                8. What is the remainder when 47 is divided by 6?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q8')">
+                    A) 0
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q8')">
+                    B) 1
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q8')">
+                    C) 5
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q8')">
+                    D) 6
+                </button>
+
+            </div>
+
+            <div class="answer" id="q8">
+
+                <strong class="result"></strong>
+
+                <p>
+                    47 = 6 × 7 + 5.
+                    Therefore, the remainder is 5.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 9 -->
+
+        <div class="question-card">
+
+            <h2>
+                9. If n leaves remainder 3 when divided by 5,
+                what is the remainder of n + 7 when divided by 5?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q9')">
+                    A) 0
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q9')">
+                    B) 1
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q9')">
+                    C) 2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q9')">
+                    D) 4
+                </button>
+
+            </div>
+
+            <div class="answer" id="q9">
+
+                <strong class="result"></strong>
+
+                <p>
+                    n has remainder 3 and 7 has remainder 2 when divided by 5.
+                    Therefore, the total remainder is 3 + 2 = 5,
+                    which gives a remainder of 0.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 10 -->
+
+        <div class="question-card">
+
+            <h2>
+                10. Which digit can replace * in 52* so that the number is divisible by 3?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q10')">
+                    A) 0
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q10')">
+                    B) 2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q10')">
+                    C) 4
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q10')">
+                    D) 5
+                </button>
+
+            </div>
+
+            <div class="answer" id="q10">
+
+                <strong class="result"></strong>
+
+                <p>
+                    The digit sum is 5 + 2 + * = 7 + *.
+                    For divisibility by 3, the digit sum must be divisible by 3.
+                    If * = 2, the sum is 9.
+                    Therefore, 522 is divisible by 3.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 11 -->
+
+        <div class="question-card">
+
+            <h2>
+                11. Which digit should replace * in 4*8 so that the number is divisible by 9?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q11')">
+                    A) 3
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q11')">
+                    B) 6
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q11')">
+                    C) 7
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q11')">
+                    D) 9
+                </button>
+
+            </div>
+
+            <div class="answer" id="q11">
+
+                <strong class="result"></strong>
+
+                <p>
+                    For divisibility by 9:
+                    4 + * + 8 must be divisible by 9.
+                    Therefore, 12 + * = 18, giving * = 6.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 12 -->
+
+        <div class="question-card">
+
+            <h2>
+                12. What is the greatest two-digit number divisible by 7?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q12')">
+                    A) 91
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q12')">
+                    B) 98
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q12')">
+                    C) 97
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q12')">
+                    D) 99
+                </button>
+
+            </div>
+
+            <div class="answer" id="q12">
+
+                <strong class="result"></strong>
+
+                <p>
+                    7 × 14 = 98.
+                    The next multiple is 105, which has three digits.
+                    Therefore, 98 is the greatest two-digit multiple of 7.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 13 -->
+
+        <div class="question-card">
+
+            <h2>
+                13. What is the smallest positive integer divisible by 3, 4 and 5?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q13')">
+                    A) 30
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q13')">
+                    B) 60
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q13')">
+                    C) 90
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q13')">
+                    D) 120
+                </button>
+
+            </div>
+
+            <div class="answer" id="q13">
+
+                <strong class="result"></strong>
+
+                <p>
+                    We need LCM(3, 4, 5).
+                    Since these numbers have no common prime factor,
+                    LCM = 3 × 4 × 5 = 60.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 14 -->
+
+        <div class="question-card">
+
+            <h2>
+                14. If gcd(a, b) = 6 and lcm(a, b) = 60,
+                which could be a possible pair (a, b)?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q14')">
+                    A) (6, 10)
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q14')">
+                    B) (12, 30)
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q14')">
+                    C) (18, 24)
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q14')">
+                    D) (10, 30)
+                </button>
+
+            </div>
+
+            <div class="answer" id="q14">
+
+                <strong class="result"></strong>
+
+                <p>
+                    gcd(12, 30) = 6 and lcm(12, 30) = 60.
+                    Therefore, (12, 30) is a valid pair.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 15 -->
+
+        <div class="question-card">
+
+            <h2>
+                15. How many positive divisors does 36 have?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q15')">
+                    A) 6
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q15')">
+                    B) 9
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q15')">
+                    C) 10
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q15')">
+                    D) 12
+                </button>
+
+            </div>
+
+            <div class="answer" id="q15">
+
+                <strong class="result"></strong>
+
+                <p>
+                    36 = 2² × 3².
+                    The number of positive divisors is:
+                    (2 + 1)(2 + 1) = 9.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 16 -->
+
+        <div class="question-card">
+
+            <h2>
+                16. What is the sum of the first 10 natural numbers?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q16')">
+                    A) 45
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q16')">
+                    B) 55
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q16')">
+                    C) 60
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q16')">
+                    D) 65
+                </button>
+
+            </div>
+
+            <div class="answer" id="q16">
+
+                <strong class="result"></strong>
+
+                <p>
+                    The first 10 positive natural numbers are
+                    1 through 10.
+                    Their sum is:
+                    10 × 11 ÷ 2 = 55.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 17 -->
+
+        <div class="question-card">
+
+            <h2>
+                17. What is the sum of all even numbers from 2 to 20?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q17')">
+                    A) 100
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q17')">
+                    B) 110
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q17')">
+                    C) 120
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q17')">
+                    D) 210
+                </button>
+
+            </div>
+
+            <div class="answer" id="q17">
+
+                <strong class="result"></strong>
+
+                <p>
+                    There are 10 even numbers from 2 to 20.
+                    Their average is (2 + 20) ÷ 2 = 11.
+                    Therefore:
+                    10 × 11 = 110.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 18 -->
+
+        <div class="question-card">
+
+            <h2>
+                18. If n is an odd integer, which expression is always even?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q18')">
+                    A) n + 1
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q18')">
+                    B) n + 2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q18')">
+                    C) 2n + 1
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q18')">
+                    D) n² + 2
+                </button>
+
+            </div>
+
+            <div class="answer" id="q18">
+
+                <strong class="result"></strong>
+
+                <p>
+                    An odd integer plus 1 is always even.
+                    Therefore, n + 1 is always even.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 19 -->
+
+        <div class="question-card">
+
+            <h2>
+                19. If a number is divisible by 2 and 3,
+                which statement must be true?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q19')">
+                    A) It is divisible by 5
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q19')">
+                    B) It is divisible by 6
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q19')">
+                    C) It is divisible by 9
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q19')">
+                    D) It is divisible by 12
+                </button>
+
+            </div>
+
+            <div class="answer" id="q19">
+
+                <strong class="result"></strong>
+
+                <p>
+                    Since 2 and 3 have no common factor other than 1,
+                    a number divisible by both must be divisible by
+                    2 × 3 = 6.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 20 -->
+
+        <div class="question-card">
+
+            <h2>
+                20. What is the remainder when 2³⁵ is divided by 2?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q20')">
+                    A) 0
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q20')">
+                    B) 1
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q20')">
+                    C) 2
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q20')">
+                    D) 35
+                </button>
+
+            </div>
+
+            <div class="answer" id="q20">
+
+                <strong class="result"></strong>
+
+                <p>
+                    Any positive power of 2 is divisible by 2.
+                    Therefore, the remainder is 0.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 21 -->
+
+        <div class="question-card">
+
+            <h2>
+                21. If n is divisible by 8,
+                which of the following is always divisible by 4?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q21')">
+                    A) n + 2
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q21')">
+                    B) n + 4
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q21')">
+                    C) n + 6
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q21')">
+                    D) n + 10
+                </button>
+
+            </div>
+
+            <div class="answer" id="q21">
+
+                <strong class="result"></strong>
+
+                <p>
+                    If n is divisible by 8, then n is also divisible by 4.
+                    Since 4 is also divisible by 4, n + 4 must be divisible
+                    by 4.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 22 -->
+
+        <div class="question-card">
+
+            <h2>
+                22. What is the greatest common divisor of 48, 72 and 120?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q22')">
+                    A) 8
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q22')">
+                    B) 24
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q22')">
+                    C) 36
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q22')">
+                    D) 48
+                </button>
+
+            </div>
+
+            <div class="answer" id="q22">
+
+                <strong class="result"></strong>
+
+                <p>
+                    gcd(48, 72) = 24.
+                    Since 120 is also divisible by 24,
+                    the greatest common divisor of all three numbers is 24.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 23 -->
+
+        <div class="question-card">
+
+            <h2>
+                23. What is the smallest positive integer that leaves remainder
+                2 when divided by both 5 and 7?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q23')">
+                    A) 12
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q23')">
+                    B) 22
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q23')">
+                    C) 37
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q23')">
+                    D) 42
+                </button>
+
+            </div>
+
+            <div class="answer" id="q23">
+
+                <strong class="result"></strong>
+
+                <p>
+                    We need n − 2 to be divisible by both 5 and 7.
+                    The least common multiple of 5 and 7 is 35.
+                    Therefore:
+                    n = 35 + 2 = 37.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 24 -->
+
+        <div class="question-card">
+
+            <h2>
+                24. A number has prime factorization
+                2³ × 3² × 5. How many positive divisors does it have?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, false, 'q24')">
+                    A) 12
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q24')">
+                    B) 18
+                </button>
+
+                <button onclick="checkAnswer(this, true, 'q24')">
+                    C) 24
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q24')">
+                    D) 30
+                </button>
+
+            </div>
+
+            <div class="answer" id="q24">
+
+                <strong class="result"></strong>
+
+                <p>
+                    For 2³ × 3² × 5¹, the number of positive divisors is:
+                    (3 + 1)(2 + 1)(1 + 1)
+                    = 4 × 3 × 2
+                    = 24.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- QUESTION 25 -->
+
+        <div class="question-card">
+
+            <h2>
+                25. Which statement is always true for two consecutive natural numbers n and n + 1?
+            </h2>
+
+            <div class="options">
+
+                <button onclick="checkAnswer(this, true, 'q25')">
+                    A) Their product is always even
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q25')">
+                    B) Their product is always odd
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q25')">
+                    C) Both numbers are always even
+                </button>
+
+                <button onclick="checkAnswer(this, false, 'q25')">
+                    D) Both numbers are always odd
+                </button>
+
+            </div>
+
+            <div class="answer" id="q25">
+
+                <strong class="result"></strong>
+
+                <p>
+                    Two consecutive integers always contain one even number.
+                    Therefore, their product is always even.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+</main>
+
+
+<footer class="home-footer">
+
+    <p>
+        © 2026 Free Study Hub · Created by <strong>AHR</strong>
+    </p>
+
+</footer>
+
+
+<script>
+
+function checkAnswer(button, correct, answerId) {
+
+    const questionCard = button.closest(".question-card");
+    const buttons = questionCard.querySelectorAll(".options button");
+    const answer = document.getElementById(answerId);
+    const result = answer.querySelector(".result");
+
+    buttons.forEach(btn => {
+        btn.disabled = true;
+    });
+
+    if (correct) {
+
+        button.classList.add("correct");
+        result.textContent = "✓ Correct!";
+
+    } else {
+
+        button.classList.add("wrong");
+        result.textContent = "✗ Incorrect";
+
+        buttons.forEach(btn => {
+
+            if (btn.getAttribute("onclick").includes("true")) {
+                btn.classList.add("correct");
+            }
+
+        });
+
+    }
+
+    answer.style.display = "block";
+}
+
+</script>
+
+</body>
+
+</html>
